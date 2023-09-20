@@ -1,0 +1,26 @@
+{
+    "sourceFile": "src/app/services/brands.service.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1695173009074,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1695173323559,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,16 +1,17 @@\n import { HttpClient} from '@angular/common/http';\n import { Injectable } from '@angular/core';\n import { Uris } from './uris';\n+import { environment } from '../environments/environmens';\n \n @Injectable ({\n     providedIn: 'root'\n })\n  export class apiService {\n-    private key = 't3stfr0ntAng2023$.';\n \n+\n     constructor(private http: HttpClient) {\n     }\n-   catList(){\n-    return this.http.get(`${Uris.api}${this.key}${Uris.brands}`)\n-   }\n+    catList() {\n+        return this.http.get(`${Uris.api}${environment.apiKey}${Uris.brands}`);\n+      }\n  }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1695173700798,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,13 +5,14 @@\n \n @Injectable ({\n     providedIn: 'root'\n })\n- export class apiService {\n-\n-\n+export class apiService {\n     constructor(private http: HttpClient) {\n     }\n+    brandList() {\n+    return this.http.get(`${Uris.api}${environment.apiKey}${Uris.brands}`);\n+    }\n\\ No newline at end of file\n     catList() {\n-        return this.http.get(`${Uris.api}${environment.apiKey}${Uris.brands}`);\n-      }\n- }\n+        return this.http.get(`${Uris.api}${environment.apiKey}${Uris.cat}`);\n+        }\n+}\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1695173009074,
+            "name": "Commit-0",
+            "content": "import { HttpClient} from '@angular/common/http';\nimport { Injectable } from '@angular/core';\nimport { Uris } from './uris';\n\n@Injectable ({\n    providedIn: 'root'\n})\n export class apiService {\n    private key = 't3stfr0ntAng2023$.';\n\n    constructor(private http: HttpClient) {\n    }\n   catList(){\n    return this.http.get(`${Uris.api}${this.key}${Uris.brands}`)\n   }\n }"
+        }
+    ]
+}
