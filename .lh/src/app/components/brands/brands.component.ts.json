@@ -1,0 +1,86 @@
+{
+    "sourceFile": "src/app/components/brands/brands.component.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 17,
+            "patches": [
+                {
+                    "date": 1695199587073,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1695199787716,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,25 +1,21 @@\n-import { Component } from '@angular/core';\n+import { AfterViewInit, Component } from '@angular/core';\n \n @Component({\n   selector: 'app-brands',\n   templateUrl: './brands.component.html',\n   styleUrls: ['./brands.component.css']\n })\n-export class BrandsComponent {\n+export class BrandsComponent implements AfterViewInit{\n \n+  ngAfterViewInit() {\n+    // Código que necesita ejecutarse después de que la vista se haya inicializado\n+    const toggleButton = document.getElementById('toggle-view') as HTMLButtonElement;\n+    const dataList = document.querySelector('.data-list') as HTMLElement;\n+\n+    toggleButton.addEventListener('click', () => {\n+      // Tu lógica para cambiar el icono y alternar la vista\n+    });\n+  }\n }\n \n \n-const toggleButton = document.getElementById('toggle-view') as HTMLButtonElement;\n-const dataList = document.querySelector('.data-list') as HTMLElement;\n\\ No newline at end of file\n-\n-let isListView = true;\n-\n-toggleButton.addEventListener('click', () => {\n-  // Cambia el icono (puedes usar una biblioteca de iconos como Font Awesome)\n-  toggleButton.innerHTML = isListView ? '<i class=\"fas fa-th\"></i> Vista de Cuadros' : '<i class=\"fas fa-list\"></i> Vista de Lista';\n-\n-  // Alterna entre las clases CSS para la vista de lista y cuadros\n-  dataList.classList.toggle('list-view', !isListView);\n-  isListView = !isListView;\n-});\n"
+                },
+                {
+                    "date": 1695200024291,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,21 +1,11 @@\n-import { AfterViewInit, Component } from '@angular/core';\n+import { Component } from '@angular/core';\n \n @Component({\n   selector: 'app-brands',\n   templateUrl: './brands.component.html',\n   styleUrls: ['./brands.component.css']\n })\n-export class BrandsComponent implements AfterViewInit{\n+export class BrandsComponent {\n \n-  ngAfterViewInit() {\n-    // Código que necesita ejecutarse después de que la vista se haya inicializado\n-    const toggleButton = document.getElementById('toggle-view') as HTMLButtonElement;\n-    const dataList = document.querySelector('.data-list') as HTMLElement;\n-\n-    toggleButton.addEventListener('click', () => {\n-      // Tu lógica para cambiar el icono y alternar la vista\n-    });\n-  }\n }\n \n-\n"
+                },
+                {
+                    "date": 1695200479924,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,11 +1,22 @@\n import { Component } from '@angular/core';\n+import { apiService } from 'src/app/services/brands.service';\n \n @Component({\n   selector: 'app-brands',\n   templateUrl: './brands.component.html',\n   styleUrls: ['./brands.component.css']\n })\n export class BrandsComponent {\n-\n+  brandInfo = {};\n+  dataArr:any;\n+  constructor(public apiService:apiService){}\n+  getCategories(){\n+    this.apiService.brandList().subscribe((resp:any)=>{\n+      console.log('esta es la respuesta ', resp);\n+      \n+      this.brandInfo = resp\n+       this.dataArr = Object.values(this.brandInfo);\n+    })\n+  }\n }\n \n"
+                },
+                {
+                    "date": 1695200504834,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,20 +1,22 @@\n-import { Component } from '@angular/core';\n+import { Component, OnInit } from '@angular/core';\n import { apiService } from 'src/app/services/brands.service';\n \n @Component({\n   selector: 'app-brands',\n   templateUrl: './brands.component.html',\n   styleUrls: ['./brands.component.css']\n })\n-export class BrandsComponent {\n+export class BrandsComponent implements OnInit{\n   brandInfo = {};\n   dataArr:any;\n   constructor(public apiService:apiService){}\n+ ngOnInit(): void {\n+   this.getCategories();\n+ }\n   getCategories(){\n     this.apiService.brandList().subscribe((resp:any)=>{\n       console.log('esta es la respuesta ', resp);\n-      \n       this.brandInfo = resp\n        this.dataArr = Object.values(this.brandInfo);\n     })\n   }\n"
+                },
+                {
+                    "date": 1695200688793,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,10 +14,10 @@\n    this.getCategories();\n  }\n   getCategories(){\n     this.apiService.brandList().subscribe((resp:any)=>{\n-      console.log('esta es la respuesta ', resp);\n-      this.brandInfo = resp\n+      console.log('esta es la respuesta ', resp.Marcas);\n+      this.brandInfo = resp.Marcas\n        this.dataArr = Object.values(this.brandInfo);\n     })\n   }\n }\n"
+                },
+                {
+                    "date": 1695200788787,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,8 +15,10 @@\n  }\n   getCategories(){\n     this.apiService.brandList().subscribe((resp:any)=>{\n       console.log('esta es la respuesta ', resp.Marcas);\n+      console.log('estos son los resultados', resp.Marcas.Reg_entregados);\n+      \n       this.brandInfo = resp.Marcas\n        this.dataArr = Object.values(this.brandInfo);\n     })\n   }\n"
+                },
+                {
+                    "date": 1695200809455,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n  }\n   getCategories(){\n     this.apiService.brandList().subscribe((resp:any)=>{\n       console.log('esta es la respuesta ', resp.Marcas);\n-      console.log('estos son los resultados', resp.Marcas.Reg_entregados);\n+      console.log('estos son los resultados', resp.Reg_entregados);\n       \n       this.brandInfo = resp.Marcas\n        this.dataArr = Object.values(this.brandInfo);\n     })\n"
+                },
+                {
+                    "date": 1695200872879,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,18 +8,19 @@\n })\n export class BrandsComponent implements OnInit{\n   brandInfo = {};\n   dataArr:any;\n+  totalBrands: any;\n   constructor(public apiService:apiService){}\n  ngOnInit(): void {\n    this.getCategories();\n  }\n   getCategories(){\n     this.apiService.brandList().subscribe((resp:any)=>{\n-      console.log('esta es la respuesta ', resp.Marcas);\n-      console.log('estos son los resultados', resp.Reg_entregados);\n+\n       \n       this.brandInfo = resp.Marcas\n+      this.totalBrands = resp.Reg_entregados\n        this.dataArr = Object.values(this.brandInfo);\n     })\n   }\n }\n"
+                },
+                {
+                    "date": 1695200916474,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,11 +11,11 @@\n   dataArr:any;\n   totalBrands: any;\n   constructor(public apiService:apiService){}\n  ngOnInit(): void {\n-   this.getCategories();\n+   this.getBrands();\n  }\n-  getCategories(){\n+  getBrands(){\n     this.apiService.brandList().subscribe((resp:any)=>{\n \n       \n       this.brandInfo = resp.Marcas\n"
+                },
+                {
+                    "date": 1695200977872,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n   styleUrls: ['./brands.component.css']\n })\n export class BrandsComponent implements OnInit{\n   brandInfo = {};\n-  dataArr:any;\n+  dataBrands:any;\n   totalBrands: any;\n   constructor(public apiService:apiService){}\n  ngOnInit(): void {\n    this.getBrands();\n@@ -19,9 +19,9 @@\n \n       \n       this.brandInfo = resp.Marcas\n       this.totalBrands = resp.Reg_entregados\n-       this.dataArr = Object.values(this.brandInfo);\n+       this.dataBrands = Object.values(this.brandInfo);\n     })\n   }\n }\n \n"
+                },
+                {
+                    "date": 1695201447868,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,19 +9,19 @@\n export class BrandsComponent implements OnInit{\n   brandInfo = {};\n   dataBrands:any;\n   totalBrands: any;\n+  allBrands:any\n   constructor(public apiService:apiService){}\n  ngOnInit(): void {\n    this.getBrands();\n  }\n   getBrands(){\n     this.apiService.brandList().subscribe((resp:any)=>{\n-\n-      \n       this.brandInfo = resp.Marcas\n       this.totalBrands = resp.Reg_entregados\n        this.dataBrands = Object.values(this.brandInfo);\n+       this.dataBrands = this.allBrands.slice(0, 16);\n     })\n   }\n }\n \n"
+                },
+                {
+                    "date": 1695201614637,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n export class BrandsComponent implements OnInit{\n   brandInfo = {};\n   dataBrands:any;\n   totalBrands: any;\n-  allBrands:any\n+  allBrands: any[] = [];\n   constructor(public apiService:apiService){}\n  ngOnInit(): void {\n    this.getBrands();\n  }\n"
+                },
+                {
+                    "date": 1695201661435,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,10 +16,11 @@\n    this.getBrands();\n  }\n   getBrands(){\n     this.apiService.brandList().subscribe((resp:any)=>{\n-      this.brandInfo = resp.Marcas\n+\n       this.totalBrands = resp.Reg_entregados\n+      \n        this.dataBrands = Object.values(this.brandInfo);\n        this.dataBrands = this.allBrands.slice(0, 16);\n     })\n   }\n"
+                },
+                {
+                    "date": 1695201857778,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,13 +16,11 @@\n    this.getBrands();\n  }\n   getBrands(){\n     this.apiService.brandList().subscribe((resp:any)=>{\n+      this.totalBrands = resp.Tot_Marcas\n+      this.dataBrands = Object.values(this.brandInfo);\n \n-      this.totalBrands = resp.Reg_entregados\n-      \n-       this.dataBrands = Object.values(this.brandInfo);\n-       this.dataBrands = this.allBrands.slice(0, 16);\n     })\n   }\n }\n \n"
+                },
+                {
+                    "date": 1695201890415,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,16 +9,16 @@\n export class BrandsComponent implements OnInit{\n   brandInfo = {};\n   dataBrands:any;\n   totalBrands: any;\n-  allBrands: any[] = [];\n   constructor(public apiService:apiService){}\n  ngOnInit(): void {\n    this.getBrands();\n  }\n   getBrands(){\n     this.apiService.brandList().subscribe((resp:any)=>{\n       this.totalBrands = resp.Tot_Marcas\n+      this.brandInfo = resp.Marcas\n       this.dataBrands = Object.values(this.brandInfo);\n \n     })\n   }\n"
+                },
+                {
+                    "date": 1695234757554,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,6 +21,9 @@\n       this.dataBrands = Object.values(this.brandInfo);\n \n     })\n   }\n+  actionButton(){\n+    alert('sijala')\n+  }\n }\n \n"
+                },
+                {
+                    "date": 1695258497645,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,8 +10,13 @@\n   brandInfo = {};\n   dataBrands:any;\n   totalBrands: any;\n   constructor(public apiService:apiService){}\n+  modoVisualizacion = 'cuadros'; \n+\n+  cambiarModoVisualizacion(modo: string) {\n+    this.modoVisualizacion = modo;\n+  }\n  ngOnInit(): void {\n    this.getBrands();\n  }\n   getBrands(){\n"
+                }
+            ],
+            "date": 1695199587073,
+            "name": "Commit-0",
+            "content": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'app-brands',\n  templateUrl: './brands.component.html',\n  styleUrls: ['./brands.component.css']\n})\nexport class BrandsComponent {\n\n}\n\n\nconst toggleButton = document.getElementById('toggle-view') as HTMLButtonElement;\nconst dataList = document.querySelector('.data-list') as HTMLElement;\n\nlet isListView = true;\n\ntoggleButton.addEventListener('click', () => {\n  // Cambia el icono (puedes usar una biblioteca de iconos como Font Awesome)\n  toggleButton.innerHTML = isListView ? '<i class=\"fas fa-th\"></i> Vista de Cuadros' : '<i class=\"fas fa-list\"></i> Vista de Lista';\n\n  // Alterna entre las clases CSS para la vista de lista y cuadros\n  dataList.classList.toggle('list-view', !isListView);\n  isListView = !isListView;\n});"
+        }
+    ]
+}

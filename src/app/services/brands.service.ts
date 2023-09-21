@@ -15,4 +15,8 @@ export class apiService {
     catList() {
         return this.http.get(`${Uris.api}${environment.apiKey}${Uris.cat}`);
         }
+    brandIconList(){
+        return this.http.get(`${Uris.api}${environment.apiKey}${Uris.catIcon}`);
+
+    }
 }

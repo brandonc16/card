@@ -1,0 +1,46 @@
+{
+    "sourceFile": "src/styles.css",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 7,
+            "patches": [
+                {
+                    "date": 1695176414746,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1695176420787,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,4 @@\n /* You can add global styles to this file, and also import other style files */\n *{\n-    margin-left: 10rem;\n+    margin-left: 2rem;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1695176451011,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,1 @@\n /* You can add global styles to this file, and also import other style files */\n-*{\n-    margin-left: 2rem;\n-}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1695176461948,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,4 @@\n /* You can add global styles to this file, and also import other style files */\n+*{\n+    margin-left: 1rem;\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1695176470198,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,1 @@\n /* You can add global styles to this file, and also import other style files */\n-*{\n-    margin-left: 1rem;\n-}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1695176826876,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,4 @@\n /* You can add global styles to this file, and also import other style files */\n+*{\n+    font-family: Arial, Helvetica, sans-serif;\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1695260291182,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,14 @@\n /* You can add global styles to this file, and also import other style files */\n *{\n     font-family: Arial, Helvetica, sans-serif;\n-}\n\\ No newline at end of file\n+}\n+.btnL:hover{\n+    background-color:#253FBC ;\n+    color:white ;\n+  }\n+  .btnCard:hover{\n+    background-color: white;\n+    border-radius: 20px;\n+    border: solid 1px;\n+    color: #253FBC ;\n+  }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1695260304673,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,14 +1,4 @@\n /* You can add global styles to this file, and also import other style files */\n *{\n     font-family: Arial, Helvetica, sans-serif;\n }\n-.btnL:hover{\n-    background-color:#253FBC ;\n-    color:white ;\n-  }\n-  .btnCard:hover{\n-    background-color: white;\n-    border-radius: 20px;\n-    border: solid 1px;\n-    color: #253FBC ;\n-  }\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1695176414746,
+            "name": "Commit-0",
+            "content": "/* You can add global styles to this file, and also import other style files */\n*{\n    margin-left: 10rem;\n}"
+        }
+    ]
+}

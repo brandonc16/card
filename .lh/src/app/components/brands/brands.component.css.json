@@ -1,0 +1,666 @@
+{
+    "sourceFile": "src/app/components/brands/brands.component.css",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 162,
+            "patches": [
+                {
+                    "date": 1695199153411,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1695199227645,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n .orderby{\n display: flex;\n justify-content: flex-end;\n-margin-right: 20px;\n+\n }\n"
+                },
+                {
+                    "date": 1695199300191,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,4 +2,7 @@\n display: flex;\n justify-content: flex-end;\n \n }\n+.container-divs{\n+ display: flex;\n+}\n"
+                },
+                {
+                    "date": 1695199307940,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n .orderby{\n display: flex;\n-justify-content: flex-end;\n \n+\n }\n .container-divs{\n  display: flex;\n }\n"
+                },
+                {
+                    "date": 1695199340153,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n .orderby{\n display: flex;\n+justify-content: flex-end;\n \n-\n }\n .container-divs{\n  display: flex;\n }\n"
+                },
+                {
+                    "date": 1695199378242,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,8 @@\n+.container{\n+    margin-left: 5rem;\n+    margin-right: 5rem;\n+}\n .orderby{\n display: flex;\n justify-content: flex-end;\n \n"
+                },
+                {
+                    "date": 1695199557801,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,12 +1,23 @@\n-.container{\n-    margin-left: 5rem;\n-    margin-right: 5rem;\n-}\n-.orderby{\n-display: flex;\n-justify-content: flex-end;\n-\n-}\n-.container-divs{\n- display: flex;\n-}\n+.data-container {\n+    width: 300px;\n+  }\n+  \n+  .data-list {\n+    list-style-type: none;\n+    padding: 0;\n+  }\n+  \n+  .data-item {\n+    border: 1px solid #ddd;\n+    padding: 10px;\n+    margin-bottom: 5px;\n+  }\n+  \n+  #toggle-view {\n+    background-color: #007bff;\n+    color: white;\n+    border: none;\n+    padding: 10px;\n+    cursor: pointer;\n+  }\n+  \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1695199571183,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,5 +19,15 @@\n     border: none;\n     padding: 10px;\n     cursor: pointer;\n   }\n-  \n\\ No newline at end of file\n+  .data-list.list-view {\n+    display: block;\n+  }\n+  \n+  .data-item {\n+    display: none;\n+  }\n+  \n+  .data-list.list-view .data-item {\n+    display: block;\n+  }  \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1695200039683,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,33 +0,0 @@\n-.data-container {\n-    width: 300px;\n-  }\n-  \n-  .data-list {\n-    list-style-type: none;\n-    padding: 0;\n-  }\n-  \n-  .data-item {\n-    border: 1px solid #ddd;\n-    padding: 10px;\n-    margin-bottom: 5px;\n-  }\n-  \n-  #toggle-view {\n-    background-color: #007bff;\n-    color: white;\n-    border: none;\n-    padding: 10px;\n-    cursor: pointer;\n-  }\n-  .data-list.list-view {\n-    display: block;\n-  }\n-  \n-  .data-item {\n-    display: none;\n-  }\n-  \n-  .data-list.list-view .data-item {\n-    display: block;\n-  }  \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1695202079249,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,5 @@\n+.logo-brand{\n+width: 20px;\n+\n+height: auto;\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1695202092189,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,4 @@\n-.logo-brand{\n+.logo-brand img{\n width: 20px;\n-\n height: auto;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1695202100372,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,4 @@\n .logo-brand img{\n-width: 20px;\n+width: 40px;\n height: auto;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1695202108535,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,4 @@\n .logo-brand img{\n-width: 40px;\n+width: 20%;\n height: auto;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1695202142958,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,7 @@\n .logo-brand img{\n width: 20%;\n height: auto;\n+}\n+.card{\n+    border: 1px solid;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1695202157976,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,6 +2,7 @@\n width: 20%;\n height: auto;\n }\n .card{\n+    display: flex;\n     border: 1px solid;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1695202174749,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n .logo-brand img{\n-width: 20%;\n+width: 30%;\n height: auto;\n }\n .card{\n     display: flex;\n"
+                },
+                {
+                    "date": 1695202303270,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,14 @@\n .logo-brand img{\n-width: 30%;\n+width: 100%;\n height: auto;\n }\n .card{\n     display: flex;\n     border: 1px solid;\n\\ No newline at end of file\n-}\n+}\n+\n+.container-cards {\n+    display: grid;\n+    grid-template-columns: repeat(4, 1fr); /* 4 columnas con tamaños iguales */\n+    gap: 20px; /* Espacio entre las tarjetas */\n+  }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1695202883465,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,9 @@\n }\n .card{\n     display: flex;\n     border: 1px solid;\n+    width: 30%;\n }\n \n .container-cards {\n     display: grid;\n"
+                },
+                {
+                    "date": 1695202892020,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n }\n .card{\n     display: flex;\n     border: 1px solid;\n-    width: 30%;\n+    width: 50%;\n }\n \n .container-cards {\n     display: grid;\n"
+                },
+                {
+                    "date": 1695202899820,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n }\n .card{\n     display: flex;\n     border: 1px solid;\n-    width: 50%;\n+    width: 80%;\n }\n \n .container-cards {\n     display: grid;\n"
+                },
+                {
+                    "date": 1695202906498,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n }\n .card{\n     display: flex;\n     border: 1px solid;\n-    width: 80%;\n+    width: 100%;\n }\n \n .container-cards {\n     display: grid;\n"
+                },
+                {
+                    "date": 1695203186068,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,5 +11,9 @@\n .container-cards {\n     display: grid;\n     grid-template-columns: repeat(4, 1fr); /* 4 columnas con tamaños iguales */\n     gap: 20px; /* Espacio entre las tarjetas */\n+  }\n+\n+  .card1{\n+    border: solid 1px rgb(186, 186, 186);\n   }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1695203249131,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,6 +14,9 @@\n     gap: 20px; /* Espacio entre las tarjetas */\n   }\n \n   .card1{\n-    border: solid 1px rgb(186, 186, 186);\n+    width: 30rem;\n+    background-color: rgb(248, 248, 248);\n+    border-radius: 20px;\n+    border: solid 1px;\n   }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1695203336960,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,5 +18,8 @@\n     width: 30rem;\n     background-color: rgb(248, 248, 248);\n     border-radius: 20px;\n     border: solid 1px;\n-  }\n\\ No newline at end of file\n+  }\n+  .coupon p {\n+    background-color: rgb(255, 208, 0);\n+  }\n"
+                },
+                {
+                    "date": 1695203363913,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,7 +19,7 @@\n     background-color: rgb(248, 248, 248);\n     border-radius: 20px;\n     border: solid 1px;\n   }\n-  .coupon p {\n+  .coupon1 p {\n     background-color: rgb(255, 208, 0);\n   }\n"
+                },
+                {
+                    "date": 1695203434748,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,5 +21,6 @@\n     border: solid 1px;\n   }\n   .coupon1 p {\n     background-color: rgb(255, 208, 0);\n+    width: 10rem;\n   }\n"
+                },
+                {
+                    "date": 1695203444312,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,6 +21,6 @@\n     border: solid 1px;\n   }\n   .coupon1 p {\n     background-color: rgb(255, 208, 0);\n-    width: 10rem;\n+    width: 9rem;\n   }\n"
+                },
+                {
+                    "date": 1695203461859,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,7 +20,7 @@\n     border-radius: 20px;\n     border: solid 1px;\n   }\n   .coupon1 p {\n-    background-color: rgb(255, 208, 0);\n+    background-color: rgb(223, 202, 110);\n     width: 9rem;\n   }\n"
+                },
+                {
+                    "date": 1695203534745,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,7 +20,7 @@\n     border-radius: 20px;\n     border: solid 1px;\n   }\n   .coupon1 p {\n-    background-color: rgb(223, 202, 110);\n+    background-color: #fff09b;\n     width: 9rem;\n   }\n"
+                },
+                {
+                    "date": 1695203552892,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,5 +22,6 @@\n   }\n   .coupon1 p {\n     background-color: #fff09b;\n     width: 9rem;\n+    margin-left: 1rem;\n   }\n"
+                },
+                {
+                    "date": 1695203563739,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,5 +23,6 @@\n   .coupon1 p {\n     background-color: #fff09b;\n     width: 9rem;\n     margin-left: 1rem;\n+    align-items: center;\n   }\n"
+                },
+                {
+                    "date": 1695203573747,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,7 +22,7 @@\n   }\n   .coupon1 p {\n     background-color: #fff09b;\n     width: 9rem;\n-    margin-left: 1rem;\n+    left: 1rem;\n     align-items: center;\n   }\n"
+                },
+                {
+                    "date": 1695203617422,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,5 +24,6 @@\n     background-color: #fff09b;\n     width: 9rem;\n     left: 1rem;\n     align-items: center;\n+    border-radius: 10px;\n   }\n"
+                },
+                {
+                    "date": 1695203773125,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,8 +14,9 @@\n     gap: 20px; /* Espacio entre las tarjetas */\n   }\n \n   .card1{\n+    margin-left: 2rem;\n     width: 30rem;\n     background-color: rgb(248, 248, 248);\n     border-radius: 20px;\n     border: solid 1px;\n"
+                },
+                {
+                    "date": 1695203860301,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,5 +26,6 @@\n     width: 9rem;\n     left: 1rem;\n     align-items: center;\n     border-radius: 10px;\n+    margin-left: 2rem;\n   }\n"
+                },
+                {
+                    "date": 1695203973998,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,4 +28,9 @@\n     align-items: center;\n     border-radius: 10px;\n     margin-left: 2rem;\n   }\n+\n+  .brand-name p{\n+    margin-left: 2rem;\n+    color: darkgray;\n+  }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1695204048533,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,5 +32,9 @@\n \n   .brand-name p{\n     margin-left: 2rem;\n     color: darkgray;\n+  }\n+  .type-coupon {\n+    font-size: large;\n+    font-weight: 600 ;\n   }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1695204055950,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,7 +34,8 @@\n     margin-left: 2rem;\n     color: darkgray;\n   }\n   .type-coupon {\n+    margin-left: 2rem;\n     font-size: large;\n     font-weight: 600 ;\n   }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1695204116421,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,7 +35,7 @@\n     color: darkgray;\n   }\n   .type-coupon {\n     margin-left: 2rem;\n-    font-size: large;\n+    font-size:x-large;\n     font-weight: 600 ;\n   }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1695204136739,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n   }\n \n   .card1{\n     margin-left: 2rem;\n-    width: 30rem;\n+    width: 25rem;\n     background-color: rgb(248, 248, 248);\n     border-radius: 20px;\n     border: solid 1px;\n   }\n"
+                },
+                {
+                    "date": 1695204144652,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n   }\n \n   .card1{\n     margin-left: 2rem;\n-    width: 25rem;\n+    width: 20rem;\n     background-color: rgb(248, 248, 248);\n     border-radius: 20px;\n     border: solid 1px;\n   }\n"
+                },
+                {
+                    "date": 1695204237291,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-.logo-brand img{\n+img{\n width: 100%;\n height: auto;\n }\n .card{\n"
+                },
+                {
+                    "date": 1695204291382,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,9 @@\n img{\n width: 100%;\n height: auto;\n+border-top-left-radius: 20px;\n+border-top-right-radius: 20px;\n }\n .card{\n     display: flex;\n     border: 1px solid;\n"
+                },
+                {
+                    "date": 1695204308662,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n img{\n width: 100%;\n-height: auto;\n+height: 80%;\n border-top-left-radius: 20px;\n border-top-right-radius: 20px;\n }\n .card{\n"
+                },
+                {
+                    "date": 1695204322662,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n img{\n width: 100%;\n-height: 80%;\n+height: 50%;\n border-top-left-radius: 20px;\n border-top-right-radius: 20px;\n }\n .card{\n"
+                },
+                {
+                    "date": 1695204484795,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,13 +3,8 @@\n height: 50%;\n border-top-left-radius: 20px;\n border-top-right-radius: 20px;\n }\n-.card{\n-    display: flex;\n-    border: 1px solid;\n-    width: 100%;\n-}\n \n .container-cards {\n     display: grid;\n     grid-template-columns: repeat(4, 1fr); /* 4 columnas con tamaños iguales */\n"
+                },
+                {
+                    "date": 1695204523009,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,10 @@\n     margin-left: 2rem;\n     width: 20rem;\n     background-color: rgb(248, 248, 248);\n     border-radius: 20px;\n-    border: solid 1px;\n+    border: solid 1px #f0f0f0;\n+    box-shadow: #cdcdcd;\n   }\n   .coupon1 p {\n     background-color: #fff09b;\n     width: 9rem;\n"
+                },
+                {
+                    "date": 1695204546865,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n \n   .card1{\n     margin-left: 2rem;\n     width: 20rem;\n-    background-color: rgb(248, 248, 248);\n+    background-color: white\n     border-radius: 20px;\n     border: solid 1px #f0f0f0;\n     box-shadow: #cdcdcd;\n   }\n"
+                },
+                {
+                    "date": 1695204756898,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,17 +5,16 @@\n border-top-right-radius: 20px;\n }\n \n .container-cards {\n-    display: grid;\n-    grid-template-columns: repeat(4, 1fr); /* 4 columnas con tamaños iguales */\n-    gap: 20px; /* Espacio entre las tarjetas */\n+    display: flex;\n+\n   }\n \n   .card1{\n     margin-left: 2rem;\n     width: 20rem;\n-    background-color: white\n+    background-color: white;\n     border-radius: 20px;\n     border: solid 1px #f0f0f0;\n     box-shadow: #cdcdcd;\n   }\n"
+                },
+                {
+                    "date": 1695204801862,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n border-top-right-radius: 20px;\n }\n \n .container-cards {\n-    display: flex;\n+    display: inline;\n \n   }\n \n   .card1{\n"
+                },
+                {
+                    "date": 1695204813249,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,8 @@\n }\n \n .container-cards {\n     display: inline;\n-\n   }\n \n   .card1{\n     margin-left: 2rem;\n"
+                },
+                {
+                    "date": 1695204837513,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n border-top-right-radius: 20px;\n }\n \n .container-cards {\n-    display: inline;\n+    display: inline-flex;\n   }\n \n   .card1{\n     margin-left: 2rem;\n"
+                },
+                {
+                    "date": 1695204875543,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,8 +11,9 @@\n \n   .card1{\n     margin-left: 2rem;\n     width: 20rem;\n+    height: 25rem;\n     background-color: white;\n     border-radius: 20px;\n     border: solid 1px #f0f0f0;\n     box-shadow: #cdcdcd;\n"
+                },
+                {
+                    "date": 1695204900223,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n   }\n \n   .card1{\n     margin-left: 2rem;\n-    width: 20rem;\n+    width: 17rem;\n     height: 25rem;\n     background-color: white;\n     border-radius: 20px;\n     border: solid 1px #f0f0f0;\n"
+                },
+                {
+                    "date": 1695204916593,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n   }\n \n   .card1{\n     margin-left: 2rem;\n-    width: 17rem;\n+    width: 15rem;\n     height: 25rem;\n     background-color: white;\n     border-radius: 20px;\n     border: solid 1px #f0f0f0;\n"
+                },
+                {
+                    "date": 1695205070595,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,8 +6,10 @@\n }\n \n .container-cards {\n     display: inline-flex;\n+    flex-wrap: wrap; /* Permite que las tarjetas se envuelvan a la siguiente línea */\n+    justify-content: space-between; /* Espacio entre las columnas */\n   }\n \n   .card1{\n     margin-left: 2rem;\n"
+                },
+                {
+                    "date": 1695205152443,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,8 +18,10 @@\n     background-color: white;\n     border-radius: 20px;\n     border: solid 1px #f0f0f0;\n     box-shadow: #cdcdcd;\n+    width: calc(25% - 10px); /* Ancho del 25% con espacio entre las tarjetas */\n+    margin-bottom: 20px;\n   }\n   .coupon1 p {\n     background-color: #fff09b;\n     width: 9rem;\n"
+                },
+                {
+                    "date": 1695205171555,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,10 +18,9 @@\n     background-color: white;\n     border-radius: 20px;\n     border: solid 1px #f0f0f0;\n     box-shadow: #cdcdcd;\n-    width: calc(25% - 10px); /* Ancho del 25% con espacio entre las tarjetas */\n-    margin-bottom: 20px;\n+    \n   }\n   .coupon1 p {\n     background-color: #fff09b;\n     width: 9rem;\n"
+                },
+                {
+                    "date": 1695205209120,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,7 @@\n+.container-main{\n+margin-left: 10rem;\n+}\n img{\n width: 100%;\n height: 50%;\n border-top-left-radius: 20px;\n"
+                },
+                {
+                    "date": 1695205227257,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n .container-main{\n-margin-left: 10rem;\n+margin-left: 12rem;\n }\n img{\n width: 100%;\n height: 50%;\n"
+                },
+                {
+                    "date": 1695205234762,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n .container-main{\n-margin-left: 12rem;\n+margin-left: 11rem;\n }\n img{\n width: 100%;\n height: 50%;\n"
+                },
+                {
+                    "date": 1695205253097,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,10 +9,9 @@\n }\n \n .container-cards {\n     display: inline-flex;\n-    flex-wrap: wrap; /* Permite que las tarjetas se envuelvan a la siguiente línea */\n-    justify-content: space-between; /* Espacio entre las columnas */\n+   \n   }\n \n   .card1{\n     margin-left: 2rem;\n"
+                },
+                {
+                    "date": 1695205268006,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n }\n \n .container-cards {\n     display: inline-flex;\n-   \n+   margin-bottom: 2rem;\n   }\n \n   .card1{\n     margin-left: 2rem;\n"
+                },
+                {
+                    "date": 1695205324609,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,10 +19,10 @@\n     height: 25rem;\n     background-color: white;\n     border-radius: 20px;\n     border: solid 1px #f0f0f0;\n-    box-shadow: #cdcdcd;\n-    \n+    box-shadow:  22px 22px 44px #d0d0d0,\n+    -22px -22px 44px #f0f0f0;\n   }\n   .coupon1 p {\n     background-color: #fff09b;\n     width: 9rem;\n"
+                },
+                {
+                    "date": 1695205391712,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,10 +19,10 @@\n     height: 25rem;\n     background-color: white;\n     border-radius: 20px;\n     border: solid 1px #f0f0f0;\n-    box-shadow:  22px 22px 44px #d0d0d0,\n-    -22px -22px 44px #f0f0f0;\n+    box-shadow:  5px 5px 10px #d0d0d0,\n+    -5px -5px 10px #f0f0f0;\n   }\n   .coupon1 p {\n     background-color: #fff09b;\n     width: 9rem;\n"
+                },
+                {
+                    "date": 1695205452637,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,10 +19,10 @@\n     height: 25rem;\n     background-color: white;\n     border-radius: 20px;\n     border: solid 1px #f0f0f0;\n-    box-shadow:  5px 5px 10px #d0d0d0,\n-    -5px -5px 10px #f0f0f0;\n+    box-shadow: 5px 5px 23px #f5f5f5,\n+    -5px -5px 23px #ffffff;\n   }\n   .coupon1 p {\n     background-color: #fff09b;\n     width: 9rem;\n"
+                },
+                {
+                    "date": 1695205631018,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n \n   .card1{\n     margin-left: 2rem;\n     width: 15rem;\n-    height: 25rem;\n+    height: 28rem;\n     background-color: white;\n     border-radius: 20px;\n     border: solid 1px #f0f0f0;\n     box-shadow: 5px 5px 23px #f5f5f5,\n@@ -39,5 +39,9 @@\n   .type-coupon {\n     margin-left: 2rem;\n     font-size:x-large;\n     font-weight: 600 ;\n+  }\n+  .link-coupon{\n+    margin-left: 2rem;\n+    color: gray;\n   }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1695205662990,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n \n   .card1{\n     margin-left: 2rem;\n     width: 15rem;\n-    height: 28rem;\n+    height: 31rem;\n     background-color: white;\n     border-radius: 20px;\n     border: solid 1px #f0f0f0;\n     box-shadow: 5px 5px 23px #f5f5f5,\n"
+                },
+                {
+                    "date": 1695205696025,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n .container-main{\n-margin-left: 11rem;\n+margin-left: 10rem;\n }\n img{\n width: 100%;\n height: 50%;\n@@ -14,9 +14,9 @@\n   }\n \n   .card1{\n     margin-left: 2rem;\n-    width: 15rem;\n+    width: 17rem;\n     height: 31rem;\n     background-color: white;\n     border-radius: 20px;\n     border: solid 1px #f0f0f0;\n"
+                },
+                {
+                    "date": 1695205703091,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n .container-main{\n-margin-left: 10rem;\n+margin-left: 9rem;\n }\n img{\n width: 100%;\n height: 50%;\n"
+                },
+                {
+                    "date": 1695205709225,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n .container-main{\n-margin-left: 9rem;\n+margin-left: 7rem;\n }\n img{\n width: 100%;\n height: 50%;\n"
+                },
+                {
+                    "date": 1695205728179,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n .container-main{\n-margin-left: 7rem;\n+margin-left: 6rem;\n }\n img{\n width: 100%;\n height: 50%;\n"
+                },
+                {
+                    "date": 1695205741898,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n .container-main{\n-margin-left: 6rem;\n+margin-left: 6.5rem;\n }\n img{\n width: 100%;\n height: 50%;\n"
+                },
+                {
+                    "date": 1695205946905,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,8 +29,9 @@\n     left: 1rem;\n     align-items: center;\n     border-radius: 10px;\n     margin-left: 2rem;\n+    position: relative;\n   }\n \n   .brand-name p{\n     margin-left: 2rem;\n"
+                },
+                {
+                    "date": 1695206077341,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,13 +25,14 @@\n   }\n   .coupon1 p {\n     background-color: #fff09b;\n     width: 9rem;\n-    left: 1rem;\n-    align-items: center;\n+\n     border-radius: 10px;\n     margin-left: 2rem;\n-    position: relative;\n+    position: absolute;\n+    margin-left: 10.3rem;\n+    margin-top: -1.5rem;\n   }\n \n   .brand-name p{\n     margin-left: 2rem;\n"
+                },
+                {
+                    "date": 1695206093169,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,9 @@\n \n     border-radius: 10px;\n     margin-left: 2rem;\n     position: absolute;\n-    margin-left: 10.3rem;\n+    margin-left: 1.3rem;\n     margin-top: -1.5rem;\n   }\n \n   .brand-name p{\n"
+                },
+                {
+                    "date": 1695206132365,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n     border-radius: 10px;\n     margin-left: 2rem;\n     position: absolute;\n     margin-left: 1.3rem;\n-    margin-top: -1.5rem;\n+    margin-top: -1rem;\n   }\n \n   .brand-name p{\n     margin-left: 2rem;\n"
+                },
+                {
+                    "date": 1695228018139,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,41 +9,40 @@\n }\n \n .container-cards {\n     display: inline-flex;\n-   margin-bottom: 2rem;\n-  }\n+    margin-bottom: 2rem;\n+}\n \n-  .card1{\n+.card1{\n     margin-left: 2rem;\n     width: 17rem;\n     height: 31rem;\n     background-color: white;\n     border-radius: 20px;\n     border: solid 1px #f0f0f0;\n     box-shadow: 5px 5px 23px #f5f5f5,\n     -5px -5px 23px #ffffff;\n-  }\n-  .coupon1 p {\n+}\n+.coupon1 p {\n     background-color: #fff09b;\n     width: 9rem;\n-\n     border-radius: 10px;\n     margin-left: 2rem;\n     position: absolute;\n     margin-left: 1.3rem;\n     margin-top: -1rem;\n-  }\n+}\n \n-  .brand-name p{\n+.brand-name p{\n     margin-left: 2rem;\n     color: darkgray;\n-  }\n-  .type-coupon {\n+}\n\\ No newline at end of file\n+.type-coupon {\n     margin-left: 2rem;\n     font-size:x-large;\n     font-weight: 600 ;\n-  }\n-  .link-coupon{\n+}\n+.link-coupon{\n     margin-left: 2rem;\n     color: gray;\n-  }\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1695233848716,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,5 +44,8 @@\n }\n .link-coupon{\n     margin-left: 2rem;\n     color: gray;\n+}\n+.main-title{\n+    margin-left: 10rem;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1695233875316,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,6 +46,6 @@\n     margin-left: 2rem;\n     color: gray;\n }\n .main-title{\n-    margin-left: 10rem;\n+    margin-left: 6rem;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1695233883868,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,6 +46,6 @@\n     margin-left: 2rem;\n     color: gray;\n }\n .main-title{\n-    margin-left: 6rem;\n+    margin-left: 4rem;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1695233891650,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,6 +46,6 @@\n     margin-left: 2rem;\n     color: gray;\n }\n .main-title{\n-    margin-left: 4rem;\n+    margin-left: 3rem;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1695234015247,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -47,5 +47,8 @@\n     color: gray;\n }\n .main-title{\n     margin-left: 3rem;\n+}\n+.title{\n+    font-size: x-large;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1695234034561,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,6 +49,6 @@\n .main-title{\n     margin-left: 3rem;\n }\n .title{\n-    font-size: x-large;\n+    font-size: xx-large;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1695234058717,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -50,5 +50,7 @@\n     margin-left: 3rem;\n }\n .title{\n     font-size: xx-large;\n+    font-weight: 600 ;\n+\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1695234097712,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -47,8 +47,9 @@\n     color: gray;\n }\n .main-title{\n     margin-left: 3rem;\n+    display: flex;\n }\n .title{\n     font-size: xx-large;\n     font-weight: 600 ;\n"
+                },
+                {
+                    "date": 1695234140643,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,6 +52,8 @@\n }\n .title{\n     font-size: xx-large;\n     font-weight: 600 ;\n-\n+}\n+.icon{\n+   text-align: right;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1695234315457,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -54,6 +54,6 @@\n     font-size: xx-large;\n     font-weight: 600 ;\n }\n .icon{\n-   text-align: right;\n+  align-items: flex-end;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1695234342778,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -54,6 +54,7 @@\n     font-size: xx-large;\n     font-weight: 600 ;\n }\n .icon{\n+    display: flex;\n   align-items: flex-end;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1695234359726,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -48,13 +48,14 @@\n }\n .main-title{\n     margin-left: 3rem;\n     display: flex;\n+    align-items: flex-end;\n }\n .title{\n     font-size: xx-large;\n     font-weight: 600 ;\n }\n .icon{\n     display: flex;\n-  align-items: flex-end;\n+\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1695234402757,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -56,6 +56,6 @@\n     font-weight: 600 ;\n }\n .icon{\n     display: flex;\n-\n+    left: 20rem;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1695234471014,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -55,7 +55,7 @@\n     font-size: xx-large;\n     font-weight: 600 ;\n }\n .icon{\n-    display: flex;\n-    left: 20rem;\n+    left: 40rem;\n+    position: relative;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1695234815354,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,5 +57,6 @@\n }\n .icon{\n     left: 40rem;\n     position: relative;\n+    cursor: pointer;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1695235309808,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -58,5 +58,21 @@\n .icon{\n     left: 40rem;\n     position: relative;\n     cursor: pointer;\n-}\n\\ No newline at end of file\n+}\n+.sort-container {\n+    display: flex;\n+    align-items: center;\n+    margin-bottom: 20px;\n+  }\n+  \n+  label {\n+    margin-right: 10px;\n+  }\n+  \n+  select {\n+    padding: 5px;\n+    border: 1px solid #ccc;\n+    border-radius: 5px;\n+  }\n+  \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1695235393207,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -67,12 +67,26 @@\n   }\n   \n   label {\n     margin-right: 10px;\n+    font-weight: bold; /* Estilo de fuente en negrita */\n+    color: #333; /* Color de texto personalizado */\n   }\n   \n   select {\n     padding: 5px;\n     border: 1px solid #ccc;\n     border-radius: 5px;\n\\ No newline at end of file\n+    background-color: #f5f5f5; /* Color de fondo personalizado */\n+    color: #555; /* Color de texto personalizado */\n+    font-size: 14px; /* Tamaño de fuente personalizado */\n   }\n-  \n+  \n+  /* Estilo para la flecha en el select (puedes personalizar más) */\n+  select::after {\n+    content: \"▼\"; /* Símbolo de flecha hacia abajo */\n+    position: absolute;\n+    top: 50%;\n+    right: 10px;\n+    transform: translateY(-50%);\n+  }\n+  \n"
+                },
+                {
+                    "date": 1695235576652,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -88,5 +88,8 @@\n     top: 50%;\n     right: 10px;\n     transform: translateY(-50%);\n   }\n-  \n\\ No newline at end of file\n+  \n+  .select{\n+display: none;  \n+  }\n"
+                },
+                {
+                    "date": 1695235586311,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -89,7 +89,5 @@\n     right: 10px;\n     transform: translateY(-50%);\n   }\n   \n-  .select{\n-display: none;  \n-  }\n+\n"
+                },
+                {
+                    "date": 1695235753016,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -67,27 +67,12 @@\n   }\n   \n   label {\n     margin-right: 10px;\n-    font-weight: bold; /* Estilo de fuente en negrita */\n-    color: #333; /* Color de texto personalizado */\n   }\n   \n   select {\n     padding: 5px;\n     border: 1px solid #ccc;\n     border-radius: 5px;\n-    background-color: #f5f5f5; /* Color de fondo personalizado */\n-    color: #555; /* Color de texto personalizado */\n-    font-size: 14px; /* Tamaño de fuente personalizado */\n   }\n-  \n-  /* Estilo para la flecha en el select (puedes personalizar más) */\n-  select::after {\n-    content: \"▼\"; /* Símbolo de flecha hacia abajo */\n-    position: absolute;\n-    top: 50%;\n-    right: 10px;\n-    transform: translateY(-50%);\n-  }\n-  \n-\n+  \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1695235764623,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -71,8 +71,8 @@\n   }\n   \n   select {\n     padding: 5px;\n-    border: 1px solid #ccc;\n+    border: transparent;\n     border-radius: 5px;\n   }\n   \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1695235820644,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -73,6 +73,7 @@\n   select {\n     padding: 5px;\n     border: transparent;\n     border-radius: 5px;\n+    background-color: transparent;\n   }\n   \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1695235835348,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -74,6 +74,7 @@\n     padding: 5px;\n     border: transparent;\n     border-radius: 5px;\n     background-color: transparent;\n+    cursor: pointer;\n   }\n   \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1695235884347,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -63,8 +63,9 @@\n .sort-container {\n     display: flex;\n     align-items: center;\n     margin-bottom: 20px;\n+    border: 1px solid #253FBC;\n   }\n   \n   label {\n     margin-right: 10px;\n"
+                },
+                {
+                    "date": 1695235916814,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -71,9 +71,9 @@\n     margin-right: 10px;\n   }\n   \n   select {\n-    padding: 5px;\n+    padding: 7px;\n     border: transparent;\n     border-radius: 5px;\n     background-color: transparent;\n     cursor: pointer;\n"
+                },
+                {
+                    "date": 1695235931633,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -64,8 +64,9 @@\n     display: flex;\n     align-items: center;\n     margin-bottom: 20px;\n     border: 1px solid #253FBC;\n+    width: 2rem;\n   }\n   \n   label {\n     margin-right: 10px;\n"
+                },
+                {
+                    "date": 1695235940247,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -64,9 +64,9 @@\n     display: flex;\n     align-items: center;\n     margin-bottom: 20px;\n     border: 1px solid #253FBC;\n-    width: 2rem;\n+    width: 10rem;\n   }\n   \n   label {\n     margin-right: 10px;\n"
+                },
+                {
+                    "date": 1695235945307,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -64,9 +64,9 @@\n     display: flex;\n     align-items: center;\n     margin-bottom: 20px;\n     border: 1px solid #253FBC;\n-    width: 10rem;\n+    width: 9rem;\n   }\n   \n   label {\n     margin-right: 10px;\n"
+                },
+                {
+                    "date": 1695235955910,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -65,8 +65,9 @@\n     align-items: center;\n     margin-bottom: 20px;\n     border: 1px solid #253FBC;\n     width: 9rem;\n+    left: 1rem;\n   }\n   \n   label {\n     margin-right: 10px;\n"
+                },
+                {
+                    "date": 1695236057233,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -63,11 +63,13 @@\n .sort-container {\n     display: flex;\n     align-items: center;\n     margin-bottom: 20px;\n-    border: 1px solid #253FBC;\n+    border: 1px solid #dfdfdf;\n     width: 9rem;\n-    left: 1rem;\n+    left: 31rem;\n+    position: relative;\n+    border-radius: 3px;\n   }\n   \n   label {\n     margin-right: 10px;\n"
+                },
+                {
+                    "date": 1695236076411,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -55,9 +55,9 @@\n     font-size: xx-large;\n     font-weight: 600 ;\n }\n .icon{\n-    left: 40rem;\n+    left: 30rem;\n     position: relative;\n     cursor: pointer;\n }\n .sort-container {\n"
+                },
+                {
+                    "date": 1695236110077,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -68,8 +68,9 @@\n     width: 9rem;\n     left: 31rem;\n     position: relative;\n     border-radius: 3px;\n+    margin-top: 10px;\n   }\n   \n   label {\n     margin-right: 10px;\n"
+                },
+                {
+                    "date": 1695236331922,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -59,28 +59,6 @@\n     left: 30rem;\n     position: relative;\n     cursor: pointer;\n }\n-.sort-container {\n-    display: flex;\n-    align-items: center;\n-    margin-bottom: 20px;\n-    border: 1px solid #dfdfdf;\n-    width: 9rem;\n-    left: 31rem;\n-    position: relative;\n-    border-radius: 3px;\n-    margin-top: 10px;\n-  }\n-  \n-  label {\n-    margin-right: 10px;\n-  }\n-  \n-  select {\n-    padding: 7px;\n-    border: transparent;\n-    border-radius: 5px;\n-    background-color: transparent;\n-    cursor: pointer;\n-  }\n+\n   \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1695236351774,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -55,9 +55,9 @@\n     font-size: xx-large;\n     font-weight: 600 ;\n }\n .icon{\n-    left: 30rem;\n+    left: 40rem;\n     position: relative;\n     cursor: pointer;\n }\n \n"
+                },
+                {
+                    "date": 1695236588537,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -60,5 +60,17 @@\n     position: relative;\n     cursor: pointer;\n }\n \n-  \n\\ No newline at end of file\n+.butttonLink{\n+    margin-top: 5rem;\n+    text-align: center;\n+\n+  }\n+  .btn{\n+\n+\n+    color: black;\n+    border: none;\n+    padding: 14px 25px;\n+    cursor: pointer;\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1695236601402,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -61,15 +61,14 @@\n     cursor: pointer;\n }\n \n .butttonLink{\n-    margin-top: 5rem;\n+\n     text-align: center;\n \n   }\n   .btn{\n \n-\n     color: black;\n     border: none;\n     padding: 14px 25px;\n     cursor: pointer;\n"
+                },
+                {
+                    "date": 1695236732489,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -61,14 +61,12 @@\n     cursor: pointer;\n }\n \n .butttonLink{\n-\n     text-align: center;\n-\n   }\n   .btn{\n-\n+    background-color: transparent;\n     color: black;\n     border: none;\n     padding: 14px 25px;\n     cursor: pointer;\n"
+                },
+                {
+                    "date": 1695236774988,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n }\n \n .card1{\n     margin-left: 2rem;\n-    width: 17rem;\n+    width: 18rem;\n     height: 31rem;\n     background-color: white;\n     border-radius: 20px;\n     border: solid 1px #f0f0f0;\n"
+                },
+                {
+                    "date": 1695236802241,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n .container-main{\n-margin-left: 6.5rem;\n+margin-left: 6rem;\n }\n img{\n width: 100%;\n height: 50%;\n"
+                },
+                {
+                    "date": 1695236811752,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n .container-main{\n-margin-left: 6rem;\n+margin-left: 5.5rem;\n }\n img{\n width: 100%;\n height: 50%;\n"
+                },
+                {
+                    "date": 1695236823602,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n .container-main{\n-margin-left: 5.5rem;\n+margin-left: 5rem;\n }\n img{\n width: 100%;\n height: 50%;\n"
+                },
+                {
+                    "date": 1695236938674,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -69,5 +69,11 @@\n     color: black;\n     border: none;\n     padding: 14px 25px;\n     cursor: pointer;\n-}\n\\ No newline at end of file\n+}\n+.arrow {\n+    border: solid black;\n+    border-width: 0 1px 1px 0;\n+    display: inline-block;\n+    padding: 3px;\n+  }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1695236950807,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -75,5 +75,9 @@\n     border: solid black;\n     border-width: 0 1px 1px 0;\n     display: inline-block;\n     padding: 3px;\n+  }\n+  .right {\n+    transform: rotate(-45deg);\n+    -webkit-transform: rotate(-45deg);\n   }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1695236987505,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -61,9 +61,11 @@\n     cursor: pointer;\n }\n \n .butttonLink{\n+    margin-top: 3rem;\n     text-align: center;\n+    margin-bottom: 3rem;\n   }\n   .btn{\n     background-color: transparent;\n     color: black;\n"
+                },
+                {
+                    "date": 1695237148595,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -81,5 +81,16 @@\n   }\n   .right {\n     transform: rotate(-45deg);\n     -webkit-transform: rotate(-45deg);\n-  }\n\\ No newline at end of file\n+  }\n+\n+  @media (max-width: 768px) {\n+    .title p {\n+        padding: 3rem;\n+        font-size: 50px;\n+    }\n+    .container{\n+        margin-left: 2rem;\n+        margin-right: 0rem;\n+    }\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1695237169712,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -84,9 +84,9 @@\n     -webkit-transform: rotate(-45deg);\n   }\n \n   @media (max-width: 768px) {\n-    .title p {\n+    .title{\n         padding: 3rem;\n         font-size: 50px;\n     }\n     .container{\n"
+                },
+                {
+                    "date": 1695237219006,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -84,8 +84,11 @@\n     -webkit-transform: rotate(-45deg);\n   }\n \n   @media (max-width: 768px) {\n+    .container-main{\n+        margin-left: 2rem;\n+        }\n     .title{\n         padding: 3rem;\n         font-size: 50px;\n     }\n"
+                },
+                {
+                    "date": 1695237246389,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -88,9 +88,9 @@\n     .container-main{\n         margin-left: 2rem;\n         }\n     .title{\n-        padding: 3rem;\n+        padding: 0rem;\n         font-size: 50px;\n     }\n     .container{\n         margin-left: 2rem;\n"
+                },
+                {
+                    "date": 1695237252681,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -85,9 +85,9 @@\n   }\n \n   @media (max-width: 768px) {\n     .container-main{\n-        margin-left: 2rem;\n+        margin-left: 1rem;\n         }\n     .title{\n         padding: 0rem;\n         font-size: 50px;\n"
+                },
+                {
+                    "date": 1695237283303,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -89,11 +89,11 @@\n         margin-left: 1rem;\n         }\n     .title{\n         padding: 0rem;\n-        font-size: 50px;\n+        font-size: 30px;\n     }\n     .container{\n-        margin-left: 2rem;\n+        margin-left: 0rem;\n         margin-right: 0rem;\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1695237551374,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -87,11 +87,14 @@\n   @media (max-width: 768px) {\n     .container-main{\n         margin-left: 1rem;\n         }\n+        .main-title{\n+        margin-left: 0rem;\n+        }\n     .title{\n         padding: 0rem;\n-        font-size: 30px;\n+        font-size: 16px;\n     }\n     .container{\n         margin-left: 0rem;\n         margin-right: 0rem;\n"
+                },
+                {
+                    "date": 1695237597470,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -98,5 +98,8 @@\n     .container{\n         margin-left: 0rem;\n         margin-right: 0rem;\n     }\n+    .icon{\n+        left: -4rem; \n+    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1695237674359,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -99,7 +99,10 @@\n         margin-left: 0rem;\n         margin-right: 0rem;\n     }\n     .icon{\n-        left: -4rem; \n+        left: 3rem; \n     }\n+    svg{\n+        height: 1em;\n+    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1695237699836,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -99,10 +99,10 @@\n         margin-left: 0rem;\n         margin-right: 0rem;\n     }\n     .icon{\n-        left: 3rem; \n+        left: 4rem; \n     }\n     svg{\n-        height: 1em;\n+        height: 1.5em;\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1695237791936,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -55,9 +55,9 @@\n     font-size: xx-large;\n     font-weight: 600 ;\n }\n .icon{\n-    left: 40rem;\n+    left: 24rem;\n     position: relative;\n     cursor: pointer;\n }\n \n"
+                },
+                {
+                    "date": 1695237816577,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -55,9 +55,9 @@\n     font-size: xx-large;\n     font-weight: 600 ;\n }\n .icon{\n-    left: 24rem;\n+    left: 30rem;\n     position: relative;\n     cursor: pointer;\n }\n \n"
+                },
+                {
+                    "date": 1695237824046,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -55,9 +55,9 @@\n     font-size: xx-large;\n     font-weight: 600 ;\n }\n .icon{\n-    left: 30rem;\n+    left: 40rem;\n     position: relative;\n     cursor: pointer;\n }\n \n"
+                },
+                {
+                    "date": 1695237833327,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -55,9 +55,9 @@\n     font-size: xx-large;\n     font-weight: 600 ;\n }\n .icon{\n-    left: 40rem;\n+    left: 44rem;\n     position: relative;\n     cursor: pointer;\n }\n \n"
+                },
+                {
+                    "date": 1695257083461,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -104,5 +104,11 @@\n     }\n     svg{\n         height: 1.5em;\n     }\n-}\n\\ No newline at end of file\n+}\n+\n+\n+.container-list {\n+    display: inline-flex;\n+    margin-bottom: 2rem;\n+}\n"
+                },
+                {
+                    "date": 1695257089775,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -108,7 +108,7 @@\n }\n \n \n .container-list {\n-    display: inline-flex;\n+   \n     margin-bottom: 2rem;\n }\n"
+                },
+                {
+                    "date": 1695257115737,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -108,7 +108,7 @@\n }\n \n \n .container-list {\n-   \n+    display: inline-flex;\n     margin-bottom: 2rem;\n }\n"
+                },
+                {
+                    "date": 1695257304086,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -111,4 +111,8 @@\n .container-list {\n     display: inline-flex;\n     margin-bottom: 2rem;\n }\n+\n+.imag-side{\n+    display: flex;\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1695257517346,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -114,5 +114,14 @@\n }\n \n .imag-side{\n     display: flex;\n+}\n+.card-list{\n+    margin-left: 17rem;\n+    width: 57rem;\n+    height: 15rem;\n+    background-color: white;\n+    border-radius: 20px;\n+    border: solid 1px #f0f0f0;\n+    box-shadow: 5px 5px 23px #f5f5f5, -5px -5px 23px #ffffff;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1695257608954,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -123,5 +123,9 @@\n     background-color: white;\n     border-radius: 20px;\n     border: solid 1px #f0f0f0;\n     box-shadow: 5px 5px 23px #f5f5f5, -5px -5px 23px #ffffff;\n+}\n+.img-list{\n+    width: 30%;\n+    height: 25%;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1695257781572,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -125,7 +125,6 @@\n     border: solid 1px #f0f0f0;\n     box-shadow: 5px 5px 23px #f5f5f5, -5px -5px 23px #ffffff;\n }\n .img-list{\n-    width: 30%;\n-    height: 25%;\n+\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1695257807554,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -125,6 +125,7 @@\n     border: solid 1px #f0f0f0;\n     box-shadow: 5px 5px 23px #f5f5f5, -5px -5px 23px #ffffff;\n }\n .img-list{\n-\n+    max-width: 100%;\n+    max-height: 100%;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1695257842687,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -127,5 +127,6 @@\n }\n .img-list{\n     max-width: 100%;\n     max-height: 100%;\n+    object-fit: contain;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1695257988643,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -125,8 +125,7 @@\n     border: solid 1px #f0f0f0;\n     box-shadow: 5px 5px 23px #f5f5f5, -5px -5px 23px #ffffff;\n }\n .img-list{\n-    max-width: 100%;\n-    max-height: 100%;\n-    object-fit: contain;\n+    max-width: 71vh;\n+    max-height: 41%;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1695258069783,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -127,5 +127,14 @@\n }\n .img-list{\n     max-width: 71vh;\n     max-height: 41%;\n+}\n+.coupon1 p {\n+    background-color: #fff09b;\n+    width: 9rem;\n+    border-radius: 10px;\n+    margin-left: 2rem;\n+    position: absolute;\n+    margin-left: 1.3rem;\n+    margin-top: 3rem;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1695258083268,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -128,9 +128,9 @@\n .img-list{\n     max-width: 71vh;\n     max-height: 41%;\n }\n-.coupon1 p {\n+.coupon-list p {\n     background-color: #fff09b;\n     width: 9rem;\n     border-radius: 10px;\n     margin-left: 2rem;\n"
+                },
+                {
+                    "date": 1695258151743,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -134,7 +134,7 @@\n     width: 9rem;\n     border-radius: 10px;\n     margin-left: 2rem;\n     position: absolute;\n-    margin-left: 1.3rem;\n-    margin-top: 3rem;\n+    margin-left: 2.3rem;\n+    margin-top: 9rem;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1695258228671,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -136,5 +136,10 @@\n     margin-left: 2rem;\n     position: absolute;\n     margin-left: 2.3rem;\n     margin-top: 9rem;\n-}\n\\ No newline at end of file\n+}\n+.brand-name-list p{\n+    margin-left: 4rem;\n+    color: darkgray;\n+    font-size: xx-large;\n+}\n"
+                },
+                {
+                    "date": 1695258250745,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -138,8 +138,8 @@\n     margin-left: 2.3rem;\n     margin-top: 9rem;\n }\n .brand-name-list p{\n-    margin-left: 4rem;\n+    margin-left: 2rem;\n     color: darkgray;\n     font-size: xx-large;\n }\n"
+                },
+                {
+                    "date": 1695258866532,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -116,11 +116,11 @@\n .imag-side{\n     display: flex;\n }\n .card-list{\n-    margin-left: 17rem;\n+    margin-left: 12rem;\n     width: 57rem;\n-    height: 15rem;\n+    height: 20rem;\n     background-color: white;\n     border-radius: 20px;\n     border: solid 1px #f0f0f0;\n     box-shadow: 5px 5px 23px #f5f5f5, -5px -5px 23px #ffffff;\n"
+                },
+                {
+                    "date": 1695258977654,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -132,9 +132,9 @@\n .coupon-list p {\n     background-color: #fff09b;\n     width: 9rem;\n     border-radius: 10px;\n-    margin-left: 2rem;\n+    margin-left: 1rem;\n     position: absolute;\n     margin-left: 2.3rem;\n     margin-top: 9rem;\n }\n"
+                },
+                {
+                    "date": 1695258984434,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -132,12 +132,12 @@\n .coupon-list p {\n     background-color: #fff09b;\n     width: 9rem;\n     border-radius: 10px;\n-    margin-left: 1rem;\n+    margin-left: 2rem;\n     position: absolute;\n     margin-left: 2.3rem;\n-    margin-top: 9rem;\n+    margin-top: 7rem;\n }\n .brand-name-list p{\n     margin-left: 2rem;\n     color: darkgray;\n"
+                },
+                {
+                    "date": 1695259389249,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -55,9 +55,9 @@\n     font-size: xx-large;\n     font-weight: 600 ;\n }\n .icon{\n-    left: 44rem;\n+    left: 38rem;\n     position: relative;\n     cursor: pointer;\n }\n \n"
+                },
+                {
+                    "date": 1695259444182,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -55,11 +55,12 @@\n     font-size: xx-large;\n     font-weight: 600 ;\n }\n .icon{\n-    left: 38rem;\n+    left: 39rem;\n     position: relative;\n     cursor: pointer;\n+    margin-right: 1rem;\n }\n \n .butttonLink{\n     margin-top: 3rem;\n"
+                },
+                {
+                    "date": 1695259501717,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -84,32 +84,9 @@\n     transform: rotate(-45deg);\n     -webkit-transform: rotate(-45deg);\n   }\n \n-  @media (max-width: 768px) {\n-    .container-main{\n-        margin-left: 1rem;\n-        }\n-        .main-title{\n-        margin-left: 0rem;\n-        }\n-    .title{\n-        padding: 0rem;\n-        font-size: 16px;\n-    }\n-    .container{\n-        margin-left: 0rem;\n-        margin-right: 0rem;\n-    }\n-    .icon{\n-        left: 4rem; \n-    }\n-    svg{\n-        height: 1.5em;\n-    }\n-}\n \n-\n .container-list {\n     display: inline-flex;\n     margin-bottom: 2rem;\n }\n@@ -143,4 +120,28 @@\n     margin-left: 2rem;\n     color: darkgray;\n     font-size: xx-large;\n }\n+\n+  @media (max-width: 768px) {\n+    .container-main{\n+        margin-left: 1rem;\n+        }\n+        .main-title{\n+        margin-left: 0rem;\n+        }\n+    .title{\n+        padding: 0rem;\n+        font-size: 16px;\n+    }\n+    .container{\n+        margin-left: 0rem;\n+        margin-right: 0rem;\n+    }\n+    .icon{\n+        left: 4rem; \n+    }\n+    svg{\n+        height: 1.5em;\n+    }\n+}\n+\n"
+                },
+                {
+                    "date": 1695259602610,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -60,9 +60,13 @@\n     position: relative;\n     cursor: pointer;\n     margin-right: 1rem;\n }\n+.icon:hover {\n \n+    color: #253FBC;\n+}\n+\n .butttonLink{\n     margin-top: 3rem;\n     text-align: center;\n     margin-bottom: 3rem;\n"
+                },
+                {
+                    "date": 1695259650573,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -62,9 +62,9 @@\n     margin-right: 1rem;\n }\n .icon:hover {\n \n-    color: #253FBC;\n+    color: #253FBC !important;\n }\n \n .butttonLink{\n     margin-top: 3rem;\n"
+                },
+                {
+                    "date": 1695259664386,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -60,13 +60,9 @@\n     position: relative;\n     cursor: pointer;\n     margin-right: 1rem;\n }\n-.icon:hover {\n \n-    color: #253FBC !important;\n-}\n-\n .butttonLink{\n     margin-top: 3rem;\n     text-align: center;\n     margin-bottom: 3rem;\n"
+                },
+                {
+                    "date": 1695260873629,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -142,6 +142,10 @@\n     }\n     svg{\n         height: 1.5em;\n     }\n+    .icon{\n+      display: block;\n+        }\n+\n }\n \n"
+                },
+                {
+                    "date": 1695260885415,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -143,9 +143,9 @@\n     svg{\n         height: 1.5em;\n     }\n     .icon{\n-      display: block;\n+      display: none;\n         }\n \n }\n \n"
+                },
+                {
+                    "date": 1695260912701,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -130,9 +130,9 @@\n         margin-left: 0rem;\n         }\n     .title{\n         padding: 0rem;\n-        font-size: 16px;\n+        font-size: 24px;\n     }\n     .container{\n         margin-left: 0rem;\n         margin-right: 0rem;\n"
+                }
+            ],
+            "date": 1695199153411,
+            "name": "Commit-0",
+            "content": ".orderby{\ndisplay: flex;\njustify-content: flex-end;\nmargin-right: 20px;\n}\n"
+        }
+    ]
+}

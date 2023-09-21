@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 2,
+            "activePatchIndex": 4,
             "patches": [
                 {
                     "date": 1695173009074,
@@ -16,6 +16,14 @@
                 {
                     "date": 1695173700798,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,13 +5,14 @@\n \n @Injectable ({\n     providedIn: 'root'\n })\n- export class apiService {\n-\n-\n+export class apiService {\n     constructor(private http: HttpClient) {\n     }\n+    brandList() {\n+    return this.http.get(`${Uris.api}${environment.apiKey}${Uris.brands}`);\n+    }\n\\ No newline at end of file\n     catList() {\n-        return this.http.get(`${Uris.api}${environment.apiKey}${Uris.brands}`);\n-      }\n- }\n+        return this.http.get(`${Uris.api}${environment.apiKey}${Uris.cat}`);\n+        }\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1695240295043,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,5 +14,9 @@\n     }\n     catList() {\n         return this.http.get(`${Uris.api}${environment.apiKey}${Uris.cat}`);\n         }\n+    catIconList(){\n+        return this.http.get(`${Uris.api}${environment.apiKey}${Uris.catIcon}`);\n+\n+    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1695240424887,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n     }\n     catList() {\n         return this.http.get(`${Uris.api}${environment.apiKey}${Uris.cat}`);\n         }\n-    catIconList(){\n+    brandIconList(){\n         return this.http.get(`${Uris.api}${environment.apiKey}${Uris.catIcon}`);\n \n     }\n }\n\\ No newline at end of file\n"
                 }
             ],
             "date": 1695173009074,

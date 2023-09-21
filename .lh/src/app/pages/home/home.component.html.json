@@ -1,0 +1,34 @@
+{
+    "sourceFile": "src/app/pages/home/home.component.html",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 4,
+            "patches": [
+                {
+                    "date": 1695176388185,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1695193052654,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,2 +1,2 @@\n <app-tablecontent></app-tablecontent>\n-<p>home works!</p>\n+<app-cat></app-cat>\n"
+                },
+                {
+                    "date": 1695199180183,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,2 +1,3 @@\n <app-tablecontent></app-tablecontent>\n <app-cat></app-cat>\n+<app-brands></app-brands>\n"
+                },
+                {
+                    "date": 1695238529459,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,4 @@\n <app-tablecontent></app-tablecontent>\n <app-cat></app-cat>\n <app-brands></app-brands>\n+<app-brand-icon></app-brand-icon>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1695243204366,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,5 @@\n <app-tablecontent></app-tablecontent>\n <app-cat></app-cat>\n <app-brands></app-brands>\n-<app-brand-icon></app-brand-icon>\n\\ No newline at end of file\n+<app-brand-icon></app-brand-icon>\n+<app-footer></app-footer>\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1695176388185,
+            "name": "Commit-0",
+            "content": "<app-tablecontent></app-tablecontent>\n<p>home works!</p>\n"
+        }
+    ]
+}

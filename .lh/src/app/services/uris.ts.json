@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 3,
+            "activePatchIndex": 8,
             "patches": [
                 {
                     "date": 1695172117917,
@@ -20,6 +20,26 @@
                 {
                     "date": 1695173679683,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,6 @@\n export class Uris {\n \n-    public static api = `https://api.viveplus.com.mx/v1/?key=`;\n-    public static brands = `&m=lista_marcas`;\n+    public static api = 'https://api.viveplus.com.mx/v1/?key=';\n+    public static brands = '&m=lista_marcas';\n+    public static cat = '&m=lista_categorias'\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1695201806529,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n export class Uris {\n \n     public static api = 'https://api.viveplus.com.mx/v1/?key=';\n-    public static brands = '&m=lista_marcas';\n+    public static brands = '&m=lista_marcas&limit=16';\n     public static cat = '&m=lista_categorias'\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1695240069304,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,7 @@\n export class Uris {\n \n     public static api = 'https://api.viveplus.com.mx/v1/?key=';\n     public static brands = '&m=lista_marcas&limit=16';\n-    public static cat = '&m=lista_categorias'\n+    public static catIcon = '&m=lista_marcas&limit=16';\n+    public static cat = '&m=lista_categorias';\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1695240265565,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n export class Uris {\n \n     public static api = 'https://api.viveplus.com.mx/v1/?key=';\n     public static brands = '&m=lista_marcas&limit=16';\n-    public static catIcon = '&m=lista_marcas&limit=16';\n+    public static catIcon = '&m=lista_marcas&limit=4&mix=true';\n     public static cat = '&m=lista_categorias';\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1695247801209,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,5 @@\n export class Uris {\n-\n     public static api = 'https://api.viveplus.com.mx/v1/?key=';\n     public static brands = '&m=lista_marcas&limit=16';\n     public static catIcon = '&m=lista_marcas&limit=4&mix=true';\n     public static cat = '&m=lista_categorias';\n"
+                },
+                {
+                    "date": 1695256180041,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-export class Uris {\n+export class Uris { \n     public static api = 'https://api.viveplus.com.mx/v1/?key=';\n     public static brands = '&m=lista_marcas&limit=16';\n     public static catIcon = '&m=lista_marcas&limit=4&mix=true';\n     public static cat = '&m=lista_categorias';\n"
                 }
             ],
             "date": 1695172117917,

@@ -1,0 +1,70 @@
+{
+    "sourceFile": "src/app/components/cat/cat.component.html",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 13,
+            "patches": [
+                {
+                    "date": 1695194339219,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1695194413193,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n <div class=\"container\">\n-    <div>\n+    <div class=\"title\">\n         <p>Explore Instan Cupons </p>\n     </div>\n </div>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1695194585454,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,8 @@\n <div class=\"container\">\n     <div class=\"title\">\n         <p>Explore Instan Cupons </p>\n     </div>\n+    <div class=\"categories-container\">\n+        <p class=\"categories-container\">Featured</p>\n+    </div>\n </div>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1695194643655,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,7 +2,7 @@\n     <div class=\"title\">\n         <p>Explore Instan Cupons </p>\n     </div>\n     <div class=\"categories-container\">\n-        <p class=\"categories-container\">Featured</p>\n+        <p class=\"categories\">Featured</p>\n     </div>\n </div>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1695195376311,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n <div class=\"container\">\n     <div class=\"title\">\n         <p>Explore Instan Cupons </p>\n     </div>\n-    <div class=\"categories-container\">\n-        <p class=\"categories\">Featured</p>\n+    <div class=\"categories-container\" *ngFor=\"let cat of catInfo1\">\n+        <p class=\"categories\">{{cat.nombre_categoria}}</p>\n     </div>\n </div>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1695195419515,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n <div class=\"container\">\n     <div class=\"title\">\n         <p>Explore Instan Cupons </p>\n     </div>\n-    <div class=\"categories-container\" *ngFor=\"let cat of catInfo1\">\n+    <div class=\"categories-container\" *ngFor=\"let cat of catInfo\">\n         <p class=\"categories\">{{cat.nombre_categoria}}</p>\n     </div>\n </div>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1695195460637,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n <div class=\"container\">\n     <div class=\"title\">\n         <p>Explore Instan Cupons </p>\n     </div>\n-    <div class=\"categories-container\" *ngFor=\"let cat of catInfo\">\n+    <div class=\"categories-container\" *ngFor=\"let cat of catInfo1\">\n         <p class=\"categories\">{{cat.nombre_categoria}}</p>\n     </div>\n </div>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1695195555902,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,7 +2,7 @@\n     <div class=\"title\">\n         <p>Explore Instan Cupons </p>\n     </div>\n     <div class=\"categories-container\" *ngFor=\"let cat of catInfo1\">\n-        <p class=\"categories\">{{cat.nombre_categoria}}</p>\n+        <p class=\"categories\">{{catInfo1.nombre_categoria}}</p>\n     </div>\n </div>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1695195799899,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n <div class=\"container\">\n     <div class=\"title\">\n         <p>Explore Instan Cupons </p>\n     </div>\n-    <div class=\"categories-container\" *ngFor=\"let cat of catInfo1\">\n+    <div class=\"categories-container\" *ngFor=\"let cat of catInfo.Categorias\">\n         <p class=\"categories\">{{catInfo1.nombre_categoria}}</p>\n     </div>\n </div>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1695195807833,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,7 +2,7 @@\n     <div class=\"title\">\n         <p>Explore Instan Cupons </p>\n     </div>\n     <div class=\"categories-container\" *ngFor=\"let cat of catInfo.Categorias\">\n-        <p class=\"categories\">{{catInfo1.nombre_categoria}}</p>\n+        <p class=\"categories\">{{cat.nombre_categoria}}</p>\n     </div>\n </div>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1695196104688,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n <div class=\"container\">\n     <div class=\"title\">\n         <p>Explore Instan Cupons </p>\n     </div>\n-    <div class=\"categories-container\" *ngFor=\"let cat of catInfo.Categorias\">\n+    <div class=\"categories-container\" *ngFor=\"let cat of catInfo1; let i = index\">\n         <p class=\"categories\">{{cat.nombre_categoria}}</p>\n     </div>\n </div>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1695196325491,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n <div class=\"container\">\n     <div class=\"title\">\n         <p>Explore Instan Cupons </p>\n     </div>\n-    <div class=\"categories-container\" *ngFor=\"let cat of catInfo1; let i = index\">\n+    <div class=\"categories-container\" *ngFor=\"let cat of dataArr\">\n         <p class=\"categories\">{{cat.nombre_categoria}}</p>\n     </div>\n </div>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1695197544312,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n+<div class=\"title\">\n+    <p>Explore Instan Cupons </p>\n+</div>\n <div class=\"container\">\n-    <div class=\"title\">\n-        <p>Explore Instan Cupons </p>\n-    </div>\n     <div class=\"categories-container\" *ngFor=\"let cat of dataArr\">\n         <p class=\"categories\">{{cat.nombre_categoria}}</p>\n     </div>\n </div>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1695197751546,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n <div class=\"title\">\n-    <p>Explore Instan Cupons </p>\n+    <p>Explore Instant Cupons </p>\n </div>\n <div class=\"container\">\n     <div class=\"categories-container\" *ngFor=\"let cat of dataArr\">\n         <p class=\"categories\">{{cat.nombre_categoria}}</p>\n"
+                }
+            ],
+            "date": 1695194339219,
+            "name": "Commit-0",
+            "content": "<div class=\"container\">\n    <div>\n        <p>Explore Instan Cupons </p>\n    </div>\n</div>"
+        }
+    ]
+}

@@ -1,0 +1,26 @@
+{
+    "sourceFile": "src/app/components/footer/footer.component.html",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1695243358301,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1695243402140,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,15 +3,15 @@\n         <div class=\"contact\">\n             <a href=\"\">Contact Support</a>\n         </div>\n         <div class=\"tyc\">\n-            <a href=\"\">Contact Support</a>\n+            <a href=\"\">Terms and Conditions</a>\n         </div>\n         <div class=\"tyc\">\n-            <a href=\"\">Contact Support</a>\n+            <a href=\"\">Privacy Policy</a>\n         </div>\n         <div class=\"tyc\">\n-            <a href=\"\">Contact Support</a>\n+            <a href=\"\">Cookie Policy</a>\n         </div>\n         \n     </div>\n </div>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1695243520366,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,16 +1,16 @@\n <div class=\"container-main\">\n     <div class=\"all-rights\">\n-        <div class=\"contact\">\n+        <div class=\"links\">\n             <a href=\"\">Contact Support</a>\n         </div>\n-        <div class=\"tyc\">\n+        <div class=\"links\">\n             <a href=\"\">Terms and Conditions</a>\n         </div>\n-        <div class=\"tyc\">\n+        <div class=\"links\">\n             <a href=\"\">Privacy Policy</a>\n         </div>\n-        <div class=\"tyc\">\n+        <div class=\"links\">\n             <a href=\"\">Cookie Policy</a>\n         </div>\n         \n     </div>\n"
+                }
+            ],
+            "date": 1695243358301,
+            "name": "Commit-0",
+            "content": "<div class=\"container-main\">\n    <div class=\"all-rights\">\n        <div class=\"contact\">\n            <a href=\"\">Contact Support</a>\n        </div>\n        <div class=\"tyc\">\n            <a href=\"\">Contact Support</a>\n        </div>\n        <div class=\"tyc\">\n            <a href=\"\">Contact Support</a>\n        </div>\n        <div class=\"tyc\">\n            <a href=\"\">Contact Support</a>\n        </div>\n        \n    </div>\n</div>"
+        }
+    ]
+}

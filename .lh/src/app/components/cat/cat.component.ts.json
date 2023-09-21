@@ -1,0 +1,50 @@
+{
+    "sourceFile": "src/app/components/cat/cat.component.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 8,
+            "patches": [
+                {
+                    "date": 1695195251629,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1695195396460,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,7 +18,9 @@\n \n getCategories(){\n   this.apiService.catList().subscribe((resp:any)=>{\n     this.catInfo1 = resp;\n+    console.log('esto es cat info1'), this.catInfo1;\n+    \n   })\n }\n }\n"
+                },
+                {
+                    "date": 1695195414781,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,10 +17,10 @@\n }\n \n getCategories(){\n   this.apiService.catList().subscribe((resp:any)=>{\n-    this.catInfo1 = resp;\n-    console.log('esto es cat info1'), this.catInfo1;\n+    this.catInfo = resp;\n+    console.log('esto es cat info1'), this.catInfo;\n     \n   })\n }\n }\n"
+                },
+                {
+                    "date": 1695195435498,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n constructor(public apiService: apiService){\n }\n \n ngOnInit(): void {\n-  \n+  this.getCategories();\n }\n \n getCategories(){\n   this.apiService.catList().subscribe((resp:any)=>{\n"
+                },
+                {
+                    "date": 1695195456091,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n }\n \n getCategories(){\n   this.apiService.catList().subscribe((resp:any)=>{\n-    this.catInfo = resp;\n+    this.catInfo1 = resp;\n     console.log('esto es cat info1'), this.catInfo;\n     \n   })\n }\n"
+                },
+                {
+                    "date": 1695195814544,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,8 +8,9 @@\n })\n export class CatComponent implements OnInit {\n   catInfo: any = [];\n   catInfo1: any = {};\n+  arrayNew: any = {}\n constructor(public apiService: apiService){\n }\n \n ngOnInit(): void {\n@@ -22,5 +23,8 @@\n     console.log('esto es cat info1'), this.catInfo;\n     \n   })\n }\n+\n+\n+\n }\n"
+                },
+                {
+                    "date": 1695196296549,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,8 +9,9 @@\n export class CatComponent implements OnInit {\n   catInfo: any = [];\n   catInfo1: any = {};\n   arrayNew: any = {}\n+  dataArr: any\n constructor(public apiService: apiService){\n }\n \n ngOnInit(): void {\n@@ -19,10 +20,9 @@\n \n getCategories(){\n   this.apiService.catList().subscribe((resp:any)=>{\n     this.catInfo1 = resp;\n-    console.log('esto es cat info1'), this.catInfo;\n-    \n+     this.dataArr = Object.values(this.catInfo1);\n   })\n }\n \n \n"
+                },
+                {
+                    "date": 1695196355580,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n }\n \n getCategories(){\n   this.apiService.catList().subscribe((resp:any)=>{\n-    this.catInfo1 = resp;\n+    this.catInfo1 = resp.Categorias;\n      this.dataArr = Object.values(this.catInfo1);\n   })\n }\n \n"
+                },
+                {
+                    "date": 1695200367399,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,11 +6,9 @@\n   templateUrl: './cat.component.html',\n   styleUrls: ['./cat.component.css']\n })\n export class CatComponent implements OnInit {\n-  catInfo: any = [];\n   catInfo1: any = {};\n-  arrayNew: any = {}\n   dataArr: any\n constructor(public apiService: apiService){\n }\n \n"
+                }
+            ],
+            "date": 1695195251629,
+            "name": "Commit-0",
+            "content": "import { Component, OnInit } from '@angular/core';\nimport { apiService } from 'src/app/services/brands.service';\n\n@Component({\n  selector: 'app-cat',\n  templateUrl: './cat.component.html',\n  styleUrls: ['./cat.component.css']\n})\nexport class CatComponent implements OnInit {\n  catInfo: any = [];\n  catInfo1: any = {};\nconstructor(public apiService: apiService){\n}\n\nngOnInit(): void {\n  \n}\n\ngetCategories(){\n  this.apiService.catList().subscribe((resp:any)=>{\n    this.catInfo1 = resp;\n  })\n}\n}\n"
+        }
+    ]
+}

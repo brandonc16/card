@@ -1,0 +1,374 @@
+{
+    "sourceFile": "src/app/components/cat/cat.component.css",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 89,
+            "patches": [
+                {
+                    "date": 1695194601719,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1695194730025,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,11 +1,11 @@\n .categories {\n     display: inline-block;\n-    padding: 10px 20px; /* Ajusta el padding según tus preferencias */\n-    background-color: #007bff; /* Color de fondo del botón */\n+    padding: 5px 14px; /* Ajusta el padding según tus preferencias */\n+    background-color: #e1e1e1; /* Color de fondo del botón */\n     color: #fff; /* Color del texto del botón */\n     border: none; /* Elimina el borde del botón */\n-    border-radius: 4px; /* Borde redondeado */\n+    border-radius: 20px; /* Borde redondeado */\n     cursor: pointer; /* Cambia el cursor al pasar sobre el botón */\n     text-align: center;\n     text-decoration: none; /* Elimina la decoración de texto (subrayado) */\n }\n"
+                },
+                {
+                    "date": 1695194758039,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n .categories {\n     display: inline-block;\n     padding: 5px 14px; /* Ajusta el padding según tus preferencias */\n-    background-color: #e1e1e1; /* Color de fondo del botón */\n-    color: #fff; /* Color del texto del botón */\n+    background-color: #a7a7a7; /* Color de fondo del botón */\n+    color: black; /* Color del texto del botón */\n     border: none; /* Elimina el borde del botón */\n     border-radius: 20px; /* Borde redondeado */\n     cursor: pointer; /* Cambia el cursor al pasar sobre el botón */\n     text-align: center;\n"
+                },
+                {
+                    "date": 1695194770554,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n .categories {\n     display: inline-block;\n     padding: 5px 14px; /* Ajusta el padding según tus preferencias */\n-    background-color: #a7a7a7; /* Color de fondo del botón */\n+    background-color: #d0d0d0; /* Color de fondo del botón */\n     color: black; /* Color del texto del botón */\n     border: none; /* Elimina el borde del botón */\n     border-radius: 20px; /* Borde redondeado */\n     cursor: pointer; /* Cambia el cursor al pasar sobre el botón */\n"
+                },
+                {
+                    "date": 1695194783418,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n .categories {\n     display: inline-block;\n     padding: 5px 14px; /* Ajusta el padding según tus preferencias */\n-    background-color: #d0d0d0; /* Color de fondo del botón */\n+    background-color: #e2e2e2; /* Color de fondo del botón */\n     color: black; /* Color del texto del botón */\n     border: none; /* Elimina el borde del botón */\n     border-radius: 20px; /* Borde redondeado */\n     cursor: pointer; /* Cambia el cursor al pasar sobre el botón */\n"
+                },
+                {
+                    "date": 1695194849486,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,8 +8,11 @@\n     cursor: pointer; /* Cambia el cursor al pasar sobre el botón */\n     text-align: center;\n     text-decoration: none; /* Elimina la decoración de texto (subrayado) */\n }\n+.categories p{\n+    font-weight: 300;\n+}\n \n /* Estilos para el botón al pasar el cursor */\n .categories:hover {\n     background-color: #0056b3; /* Cambia el color de fondo al pasar el cursor */\n"
+                },
+                {
+                    "date": 1695194866107,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n     text-align: center;\n     text-decoration: none; /* Elimina la decoración de texto (subrayado) */\n }\n .categories p{\n-    font-weight: 300;\n+    font-weight: 500;\n }\n \n /* Estilos para el botón al pasar el cursor */\n .categories:hover {\n"
+                },
+                {
+                    "date": 1695194888234,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,13 +7,12 @@\n     border-radius: 20px; /* Borde redondeado */\n     cursor: pointer; /* Cambia el cursor al pasar sobre el botón */\n     text-align: center;\n     text-decoration: none; /* Elimina la decoración de texto (subrayado) */\n-}\n-.categories p{\n     font-weight: 500;\n }\n \n+\n /* Estilos para el botón al pasar el cursor */\n .categories:hover {\n     background-color: #0056b3; /* Cambia el color de fondo al pasar el cursor */\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1695194899568,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n     border-radius: 20px; /* Borde redondeado */\n     cursor: pointer; /* Cambia el cursor al pasar sobre el botón */\n     text-align: center;\n     text-decoration: none; /* Elimina la decoración de texto (subrayado) */\n-    font-weight: 500;\n+    font-weight: 600;\n }\n \n \n /* Estilos para el botón al pasar el cursor */\n"
+                },
+                {
+                    "date": 1695194936411,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,6 +13,7 @@\n \n \n /* Estilos para el botón al pasar el cursor */\n .categories:hover {\n-    background-color: #0056b3; /* Cambia el color de fondo al pasar el cursor */\n+    background-color: #000000; /* Cambia el color de fondo al pasar el cursor */\n+    color: white;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1695196375162,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,8 +8,9 @@\n     cursor: pointer; /* Cambia el cursor al pasar sobre el botón */\n     text-align: center;\n     text-decoration: none; /* Elimina la decoración de texto (subrayado) */\n     font-weight: 600;\n+    display: flex;\n }\n \n \n /* Estilos para el botón al pasar el cursor */\n"
+                },
+                {
+                    "date": 1695196389632,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,8 +9,9 @@\n     text-align: center;\n     text-decoration: none; /* Elimina la decoración de texto (subrayado) */\n     font-weight: 600;\n     display: flex;\n+    width: 20px;\n }\n \n \n /* Estilos para el botón al pasar el cursor */\n"
+                },
+                {
+                    "date": 1695196395514,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n     text-align: center;\n     text-decoration: none; /* Elimina la decoración de texto (subrayado) */\n     font-weight: 600;\n     display: flex;\n-    width: 20px;\n+    width: 40px;\n }\n \n \n /* Estilos para el botón al pasar el cursor */\n"
+                },
+                {
+                    "date": 1695196401197,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n     text-align: center;\n     text-decoration: none; /* Elimina la decoración de texto (subrayado) */\n     font-weight: 600;\n     display: flex;\n-    width: 40px;\n+    width:80px;\n }\n \n \n /* Estilos para el botón al pasar el cursor */\n"
+                },
+                {
+                    "date": 1695196409744,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n     text-align: center;\n     text-decoration: none; /* Elimina la decoración de texto (subrayado) */\n     font-weight: 600;\n     display: flex;\n-    width:80px;\n+    width:50%;\n }\n \n \n /* Estilos para el botón al pasar el cursor */\n"
+                },
+                {
+                    "date": 1695196415328,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n     text-align: center;\n     text-decoration: none; /* Elimina la decoración de texto (subrayado) */\n     font-weight: 600;\n     display: flex;\n-    width:50%;\n+    width:30%;\n }\n \n \n /* Estilos para el botón al pasar el cursor */\n"
+                },
+                {
+                    "date": 1695196429875,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,10 @@\n     text-align: center;\n     text-decoration: none; /* Elimina la decoración de texto (subrayado) */\n     font-weight: 600;\n     display: flex;\n-    width:30%;\n+    width:20%;\n+    text-align: center;\n }\n \n \n /* Estilos para el botón al pasar el cursor */\n"
+                },
+                {
+                    "date": 1695196440737,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n .categories {\n-    display: inline-block;\n+\n     padding: 5px 14px; /* Ajusta el padding según tus preferencias */\n     background-color: #e2e2e2; /* Color de fondo del botón */\n     color: black; /* Color del texto del botón */\n     border: none; /* Elimina el borde del botón */\n@@ -10,9 +10,9 @@\n     text-decoration: none; /* Elimina la decoración de texto (subrayado) */\n     font-weight: 600;\n     display: flex;\n     width:20%;\n-    text-align: center;\n+\n }\n \n \n /* Estilos para el botón al pasar el cursor */\n"
+                },
+                {
+                    "date": 1695196452458,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,13 +1,11 @@\n .categories {\n-\n     padding: 5px 14px; /* Ajusta el padding según tus preferencias */\n     background-color: #e2e2e2; /* Color de fondo del botón */\n     color: black; /* Color del texto del botón */\n     border: none; /* Elimina el borde del botón */\n     border-radius: 20px; /* Borde redondeado */\n     cursor: pointer; /* Cambia el cursor al pasar sobre el botón */\n-    text-align: center;\n     text-decoration: none; /* Elimina la decoración de texto (subrayado) */\n     font-weight: 600;\n     display: flex;\n     width:20%;\n"
+                },
+                {
+                    "date": 1695196459540,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n     cursor: pointer; /* Cambia el cursor al pasar sobre el botón */\n     text-decoration: none; /* Elimina la decoración de texto (subrayado) */\n     font-weight: 600;\n     display: flex;\n-    width:20%;\n+    width:17%;\n \n }\n \n \n"
+                },
+                {
+                    "date": 1695196487756,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n     cursor: pointer; /* Cambia el cursor al pasar sobre el botón */\n     text-decoration: none; /* Elimina la decoración de texto (subrayado) */\n     font-weight: 600;\n     display: flex;\n-    width:17%;\n+    width:15%;\n \n }\n \n \n"
+                },
+                {
+                    "date": 1695196562757,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,13 +8,20 @@\n     text-decoration: none; /* Elimina la decoración de texto (subrayado) */\n     font-weight: 600;\n     display: flex;\n     width:15%;\n+    text-align: center;\n \n }\n \n \n /* Estilos para el botón al pasar el cursor */\n .categories:hover {\n     background-color: #000000; /* Cambia el color de fondo al pasar el cursor */\n     color: white;\n+}\n+.categories-container{\n+    display: flex;\n+    justify-content: center; /* Centrar horizontalmente */\n+    align-items: center; /* Centrar verticalmente */\n+    height: 100vh;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1695196574741,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,6 +22,6 @@\n .categories-container{\n     display: flex;\n     justify-content: center; /* Centrar horizontalmente */\n     align-items: center; /* Centrar verticalmente */\n-    height: 100vh;\n+\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1695196596643,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,8 +20,8 @@\n     color: white;\n }\n .categories-container{\n     display: flex;\n-    justify-content: center; /* Centrar horizontalmente */\n+   \n     align-items: center; /* Centrar verticalmente */\n \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1695196607533,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,8 +20,8 @@\n     color: white;\n }\n .categories-container{\n     display: flex;\n+    justify-content:center /* Centrar horizontalmente */\n    \n-    align-items: center; /* Centrar verticalmente */\n \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1695196621078,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,8 +9,9 @@\n     font-weight: 600;\n     display: flex;\n     width:15%;\n     text-align: center;\n+    display: flex;\n \n }\n \n \n"
+                },
+                {
+                    "date": 1695196631637,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,11 +6,11 @@\n     border-radius: 20px; /* Borde redondeado */\n     cursor: pointer; /* Cambia el cursor al pasar sobre el botón */\n     text-decoration: none; /* Elimina la decoración de texto (subrayado) */\n     font-weight: 600;\n-    display: flex;\n+\n     width:15%;\n-    text-align: center;\n+\n     display: flex;\n \n }\n \n"
+                },
+                {
+                    "date": 1695196654459,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,13 +6,11 @@\n     border-radius: 20px; /* Borde redondeado */\n     cursor: pointer; /* Cambia el cursor al pasar sobre el botón */\n     text-decoration: none; /* Elimina la decoración de texto (subrayado) */\n     font-weight: 600;\n-\n     width:15%;\n-\n     display: flex;\n-\n+    justify-content:center /* Centrar horizontalmente */\n }\n \n \n /* Estilos para el botón al pasar el cursor */\n@@ -20,9 +18,8 @@\n     background-color: #000000; /* Cambia el color de fondo al pasar el cursor */\n     color: white;\n }\n .categories-container{\n-    display: flex;\n-    justify-content:center /* Centrar horizontalmente */\n    \n+   \n \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1695196689284,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,10 @@\n     text-decoration: none; /* Elimina la decoración de texto (subrayado) */\n     font-weight: 600;\n     width:15%;\n     display: flex;\n-    justify-content:center /* Centrar horizontalmente */\n+    justify-content:center; /* Centrar horizontalmente */\n+    font-size: small;\n }\n \n \n /* Estilos para el botón al pasar el cursor */\n"
+                },
+                {
+                    "date": 1695196697627,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n     border-radius: 20px; /* Borde redondeado */\n     cursor: pointer; /* Cambia el cursor al pasar sobre el botón */\n     text-decoration: none; /* Elimina la decoración de texto (subrayado) */\n     font-weight: 600;\n-    width:15%;\n+    width:13%;\n     display: flex;\n     justify-content:center; /* Centrar horizontalmente */\n     font-size: small;\n }\n"
+                },
+                {
+                    "date": 1695196779257,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,21 +6,23 @@\n     border-radius: 20px; /* Borde redondeado */\n     cursor: pointer; /* Cambia el cursor al pasar sobre el botón */\n     text-decoration: none; /* Elimina la decoración de texto (subrayado) */\n     font-weight: 600;\n-    width:13%;\n+    width:12%;\n     display: flex;\n     justify-content:center; /* Centrar horizontalmente */\n     font-size: small;\n }\n+.categories p {\n+    flex: 1; /* Hace que los párrafos se expandan para llenar el espacio disponible */\n+    margin: 0; /* Elimina el margen predeterminado de los párrafos */\n+    padding: 5px; /* Ajusta el padding de los párrafos según tus preferencias */\n+    text-align: center; /* Centra el texto horizontalmente dentro de cada párrafo */\n+    font-weight: 600;\n+  }\n \n \n /* Estilos para el botón al pasar el cursor */\n .categories:hover {\n\\ No newline at end of file\n     background-color: #000000; /* Cambia el color de fondo al pasar el cursor */\n     color: white;\n }\n-.categories-container{\n-   \n-   \n-\n-}\n"
+                },
+                {
+                    "date": 1695196794873,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n }\n .categories p {\n     flex: 1; /* Hace que los párrafos se expandan para llenar el espacio disponible */\n     margin: 0; /* Elimina el margen predeterminado de los párrafos */\n-    padding: 5px; /* Ajusta el padding de los párrafos según tus preferencias */\n+    padding: 3px; /* Ajusta el padding de los párrafos según tus preferencias */\n     text-align: center; /* Centra el texto horizontalmente dentro de cada párrafo */\n     font-weight: 600;\n   }\n \n@@ -24,5 +24,5 @@\n /* Estilos para el botón al pasar el cursor */\n .categories:hover {\n     background-color: #000000; /* Cambia el color de fondo al pasar el cursor */\n     color: white;\n-}\n\\ No newline at end of file\n+}\n"
+                },
+                {
+                    "date": 1695196820981,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n     display: flex;\n     justify-content:center; /* Centrar horizontalmente */\n     font-size: small;\n }\n-.categories p {\n+.categories-container {\n     flex: 1; /* Hace que los párrafos se expandan para llenar el espacio disponible */\n     margin: 0; /* Elimina el margen predeterminado de los párrafos */\n     padding: 3px; /* Ajusta el padding de los párrafos según tus preferencias */\n     text-align: center; /* Centra el texto horizontalmente dentro de cada párrafo */\n"
+                },
+                {
+                    "date": 1695196854523,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,17 +11,11 @@\n     display: flex;\n     justify-content:center; /* Centrar horizontalmente */\n     font-size: small;\n }\n-.categories-container {\n-    flex: 1; /* Hace que los párrafos se expandan para llenar el espacio disponible */\n-    margin: 0; /* Elimina el margen predeterminado de los párrafos */\n-    padding: 3px; /* Ajusta el padding de los párrafos según tus preferencias */\n-    text-align: center; /* Centra el texto horizontalmente dentro de cada párrafo */\n-    font-weight: 600;\n-  }\n \n \n+\n /* Estilos para el botón al pasar el cursor */\n .categories:hover {\n     background-color: #000000; /* Cambia el color de fondo al pasar el cursor */\n     color: white;\n"
+                },
+                {
+                    "date": 1695196859633,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,11 +11,17 @@\n     display: flex;\n     justify-content:center; /* Centrar horizontalmente */\n     font-size: small;\n }\n+.categories-container {\n+    flex: 1; /* Hace que los párrafos se expandan para llenar el espacio disponible */\n+    margin: 0; /* Elimina el margen predeterminado de los párrafos */\n+    padding: 3px; /* Ajusta el padding de los párrafos según tus preferencias */\n+    text-align: center; /* Centra el texto horizontalmente dentro de cada párrafo */\n+    font-weight: 600;\n+  }\n \n \n-\n /* Estilos para el botón al pasar el cursor */\n .categories:hover {\n     background-color: #000000; /* Cambia el color de fondo al pasar el cursor */\n     color: white;\n"
+                },
+                {
+                    "date": 1695196867244,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,17 +11,11 @@\n     display: flex;\n     justify-content:center; /* Centrar horizontalmente */\n     font-size: small;\n }\n-.categories-container {\n-    flex: 1; /* Hace que los párrafos se expandan para llenar el espacio disponible */\n-    margin: 0; /* Elimina el margen predeterminado de los párrafos */\n-    padding: 3px; /* Ajusta el padding de los párrafos según tus preferencias */\n-    text-align: center; /* Centra el texto horizontalmente dentro de cada párrafo */\n-    font-weight: 600;\n-  }\n \n \n+\n /* Estilos para el botón al pasar el cursor */\n .categories:hover {\n     background-color: #000000; /* Cambia el color de fondo al pasar el cursor */\n     color: white;\n"
+                },
+                {
+                    "date": 1695196882934,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n     border-radius: 20px; /* Borde redondeado */\n     cursor: pointer; /* Cambia el cursor al pasar sobre el botón */\n     text-decoration: none; /* Elimina la decoración de texto (subrayado) */\n     font-weight: 600;\n-    width:12%;\n+    width:10%;\n     display: flex;\n     justify-content:center; /* Centrar horizontalmente */\n     font-size: small;\n }\n"
+                },
+                {
+                    "date": 1695196887998,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n     border-radius: 20px; /* Borde redondeado */\n     cursor: pointer; /* Cambia el cursor al pasar sobre el botón */\n     text-decoration: none; /* Elimina la decoración de texto (subrayado) */\n     font-weight: 600;\n-    width:10%;\n+    width:11%;\n     display: flex;\n     justify-content:center; /* Centrar horizontalmente */\n     font-size: small;\n }\n"
+                },
+                {
+                    "date": 1695196971911,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,8 +11,13 @@\n     display: flex;\n     justify-content:center; /* Centrar horizontalmente */\n     font-size: small;\n }\n+.categories-container {\n+    display: inline-block; /* Hace que los divs sean elementos en línea-block */\n+    margin-right: 10px; /* Agrega un margen derecho entre los divs */\n+  }\n+  \n \n \n \n /* Estilos para el botón al pasar el cursor */\n"
+                },
+                {
+                    "date": 1695197130330,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,21 +1,21 @@\n .categories {\n-    padding: 5px 14px; /* Ajusta el padding según tus preferencias */\n+    padding: 6px 12px; /* Ajusta el padding según tus preferencias */\n     background-color: #e2e2e2; /* Color de fondo del botón */\n     color: black; /* Color del texto del botón */\n     border: none; /* Elimina el borde del botón */\n     border-radius: 20px; /* Borde redondeado */\n     cursor: pointer; /* Cambia el cursor al pasar sobre el botón */\n     text-decoration: none; /* Elimina la decoración de texto (subrayado) */\n     font-weight: 600;\n-    width:11%;\n+    width:89%;\n     display: flex;\n     justify-content:center; /* Centrar horizontalmente */\n     font-size: small;\n }\n .categories-container {\n     display: inline-block; /* Hace que los divs sean elementos en línea-block */\n-    margin-right: 10px; /* Agrega un margen derecho entre los divs */\n+    margin-right: 24px; /* Agrega un margen derecho entre los divs */\n   }\n   \n \n \n"
+                },
+                {
+                    "date": 1695197178229,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,7 @@\n+.container{\n+    margin-left: 20rem;\n+}\n .categories {\n     padding: 6px 12px; /* Ajusta el padding según tus preferencias */\n     background-color: #e2e2e2; /* Color de fondo del botón */\n     color: black; /* Color del texto del botón */\n"
+                },
+                {
+                    "date": 1695197210237,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,5 @@\n-.container{\n-    margin-left: 20rem;\n-}\n+\n .categories {\n     padding: 6px 12px; /* Ajusta el padding según tus preferencias */\n     background-color: #e2e2e2; /* Color de fondo del botón */\n     color: black; /* Color del texto del botón */\n@@ -17,8 +15,9 @@\n }\n .categories-container {\n     display: inline-block; /* Hace que los divs sean elementos en línea-block */\n     margin-right: 24px; /* Agrega un margen derecho entre los divs */\n+    margin-left: 20rem;\n   }\n   \n \n \n"
+                },
+                {
+                    "date": 1695197220394,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n }\n .categories-container {\n     display: inline-block; /* Hace que los divs sean elementos en línea-block */\n     margin-right: 24px; /* Agrega un margen derecho entre los divs */\n-    margin-left: 20rem;\n+    margin-left: 10rem;\n   }\n   \n \n \n"
+                },
+                {
+                    "date": 1695197237223,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n     font-size: small;\n }\n .categories-container {\n     display: inline-block; /* Hace que los divs sean elementos en línea-block */\n-    margin-right: 24px; /* Agrega un margen derecho entre los divs */\n+    margin-right: 10px; /* Agrega un margen derecho entre los divs */\n     margin-left: 10rem;\n   }\n   \n \n"
+                },
+                {
+                    "date": 1695197333316,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,10 +14,10 @@\n     font-size: small;\n }\n .categories-container {\n     display: inline-block; /* Hace que los divs sean elementos en línea-block */\n-    margin-right: 10px; /* Agrega un margen derecho entre los divs */\n-    margin-left: 10rem;\n+    margin-right: 24px; /* Agrega un margen derecho entre los divs */\n+    \n   }\n   \n \n \n"
+                },
+                {
+                    "date": 1695197342827,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n     font-size: small;\n }\n .categories-container {\n     display: inline-block; /* Hace que los divs sean elementos en línea-block */\n-    margin-right: 24px; /* Agrega un margen derecho entre los divs */\n+    margin-right: 23px; /* Agrega un margen derecho entre los divs */\n     \n   }\n   \n \n"
+                },
+                {
+                    "date": 1695197348281,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n     font-size: small;\n }\n .categories-container {\n     display: inline-block; /* Hace que los divs sean elementos en línea-block */\n-    margin-right: 23px; /* Agrega un margen derecho entre los divs */\n+    margin-right: 22px; /* Agrega un margen derecho entre los divs */\n     \n   }\n   \n \n"
+                },
+                {
+                    "date": 1695197358120,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n     font-size: small;\n }\n .categories-container {\n     display: inline-block; /* Hace que los divs sean elementos en línea-block */\n-    margin-right: 22px; /* Agrega un margen derecho entre los divs */\n+    margin-right: 21px; /* Agrega un margen derecho entre los divs */\n     \n   }\n   \n \n"
+                },
+                {
+                    "date": 1695197366128,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,14 +15,13 @@\n }\n .categories-container {\n     display: inline-block; /* Hace que los divs sean elementos en línea-block */\n     margin-right: 21px; /* Agrega un margen derecho entre los divs */\n-    \n-  }\n-  \n+}\n \n \n \n+\n /* Estilos para el botón al pasar el cursor */\n .categories:hover {\n     background-color: #000000; /* Cambia el color de fondo al pasar el cursor */\n     color: white;\n"
+                },
+                {
+                    "date": 1695197385352,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,8 +16,11 @@\n .categories-container {\n     display: inline-block; /* Hace que los divs sean elementos en línea-block */\n     margin-right: 21px; /* Agrega un margen derecho entre los divs */\n }\n+.container{\n+    margin-left: 4rem;\n+}\n \n \n \n \n"
+                },
+                {
+                    "date": 1695197393447,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n     display: inline-block; /* Hace que los divs sean elementos en línea-block */\n     margin-right: 21px; /* Agrega un margen derecho entre los divs */\n }\n .container{\n-    margin-left: 4rem;\n+    margin-left: 6rem;\n }\n \n \n \n"
+                },
+                {
+                    "date": 1695197403513,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n     display: inline-block; /* Hace que los divs sean elementos en línea-block */\n     margin-right: 21px; /* Agrega un margen derecho entre los divs */\n }\n .container{\n-    margin-left: 6rem;\n+    margin-left: 10rem;\n }\n \n \n \n"
+                },
+                {
+                    "date": 1695197417020,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,8 +18,9 @@\n     margin-right: 21px; /* Agrega un margen derecho entre los divs */\n }\n .container{\n     margin-left: 10rem;\n+    margin-right: 10rem;\n }\n \n \n \n"
+                },
+                {
+                    "date": 1695197425984,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,10 +17,10 @@\n     display: inline-block; /* Hace que los divs sean elementos en línea-block */\n     margin-right: 21px; /* Agrega un margen derecho entre los divs */\n }\n .container{\n-    margin-left: 10rem;\n-    margin-right: 10rem;\n+    margin-left: 15rem;\n+    margin-right: 15rem;\n }\n \n \n \n"
+                },
+                {
+                    "date": 1695197433673,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,10 +17,10 @@\n     display: inline-block; /* Hace que los divs sean elementos en línea-block */\n     margin-right: 21px; /* Agrega un margen derecho entre los divs */\n }\n .container{\n-    margin-left: 15rem;\n-    margin-right: 15rem;\n+    margin-left: 17rem;\n+    margin-right: 17rem;\n }\n \n \n \n"
+                },
+                {
+                    "date": 1695197445868,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n     display: inline-block; /* Hace que los divs sean elementos en línea-block */\n     margin-right: 21px; /* Agrega un margen derecho entre los divs */\n }\n .container{\n-    margin-left: 17rem;\n+    margin-left: 19rem;\n     margin-right: 17rem;\n }\n \n \n"
+                },
+                {
+                    "date": 1695197454567,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n     margin-right: 21px; /* Agrega un margen derecho entre los divs */\n }\n .container{\n     margin-left: 19rem;\n-    margin-right: 17rem;\n+    margin-right: 15rem;\n }\n \n \n \n"
+                },
+                {
+                    "date": 1695197459671,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n     margin-right: 21px; /* Agrega un margen derecho entre los divs */\n }\n .container{\n     margin-left: 19rem;\n-    margin-right: 15rem;\n+    margin-right: 13rem;\n }\n \n \n \n"
+                },
+                {
+                    "date": 1695197472456,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n     margin-right: 21px; /* Agrega un margen derecho entre los divs */\n }\n .container{\n     margin-left: 19rem;\n-    margin-right: 13rem;\n+    margin-right: 19rem;\n }\n \n \n \n"
+                },
+                {
+                    "date": 1695197478455,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n     display: inline-block; /* Hace que los divs sean elementos en línea-block */\n     margin-right: 21px; /* Agrega un margen derecho entre los divs */\n }\n .container{\n-    margin-left: 19rem;\n+    margin-left: 23rem;\n     margin-right: 19rem;\n }\n \n \n"
+                },
+                {
+                    "date": 1695197483552,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n     display: inline-block; /* Hace que los divs sean elementos en línea-block */\n     margin-right: 21px; /* Agrega un margen derecho entre los divs */\n }\n .container{\n-    margin-left: 23rem;\n+    margin-left: 25rem;\n     margin-right: 19rem;\n }\n \n \n"
+                },
+                {
+                    "date": 1695197489684,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n     display: inline-block; /* Hace que los divs sean elementos en línea-block */\n     margin-right: 21px; /* Agrega un margen derecho entre los divs */\n }\n .container{\n-    margin-left: 25rem;\n+    margin-left: 26rem;\n     margin-right: 19rem;\n }\n \n \n"
+                },
+                {
+                    "date": 1695197495816,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n     display: inline-block; /* Hace que los divs sean elementos en línea-block */\n     margin-right: 21px; /* Agrega un margen derecho entre los divs */\n }\n .container{\n-    margin-left: 26rem;\n+    margin-left: 27rem;\n     margin-right: 19rem;\n }\n \n \n"
+                },
+                {
+                    "date": 1695197508070,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n     margin-right: 21px; /* Agrega un margen derecho entre los divs */\n }\n .container{\n     margin-left: 27rem;\n-    margin-right: 19rem;\n+    margin-right: 21rem;\n }\n \n \n \n"
+                },
+                {
+                    "date": 1695197513282,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n     margin-right: 21px; /* Agrega un margen derecho entre los divs */\n }\n .container{\n     margin-left: 27rem;\n-    margin-right: 21rem;\n+    margin-right: 23rem;\n }\n \n \n \n"
+                },
+                {
+                    "date": 1695197522335,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n     display: inline-block; /* Hace que los divs sean elementos en línea-block */\n     margin-right: 21px; /* Agrega un margen derecho entre los divs */\n }\n .container{\n-    margin-left: 27rem;\n+    margin-left: 24rem;\n     margin-right: 23rem;\n }\n \n \n"
+                },
+                {
+                    "date": 1695197637687,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,10 +17,10 @@\n     display: inline-block; /* Hace que los divs sean elementos en línea-block */\n     margin-right: 21px; /* Agrega un margen derecho entre los divs */\n }\n .container{\n-    margin-left: 24rem;\n-    margin-right: 23rem;\n+    margin-left: 25rem;\n+    margin-right: 21rem;\n }\n \n \n \n"
+                },
+                {
+                    "date": 1695197690951,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,11 +21,16 @@\n     margin-left: 25rem;\n     margin-right: 21rem;\n }\n \n+.title p{\n+    padding: 5rem;\n+    word-spacing: 5px;\n+    font-size: 60px;\n+    margin: 0 auto; /* Centrado horizontal */\n+    text-align: center; /* Alineación del texto en el centro */\n+}\n \n-\n-\n /* Estilos para el botón al pasar el cursor */\n .categories:hover {\n     background-color: #000000; /* Cambia el color de fondo al pasar el cursor */\n     color: white;\n"
+                },
+                {
+                    "date": 1695197711394,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,8 @@\n }\n \n .title p{\n     padding: 5rem;\n-    word-spacing: 5px;\n     font-size: 60px;\n     margin: 0 auto; /* Centrado horizontal */\n     text-align: center; /* Alineación del texto en el centro */\n }\n"
+                },
+                {
+                    "date": 1695197735013,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,9 @@\n }\n \n .title p{\n     padding: 5rem;\n-    font-size: 60px;\n+    font-size: 50px;\n     margin: 0 auto; /* Centrado horizontal */\n     text-align: center; /* Alineación del texto en el centro */\n }\n \n"
+                },
+                {
+                    "date": 1695197876055,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n     display: inline-block; /* Hace que los divs sean elementos en línea-block */\n     margin-right: 21px; /* Agrega un margen derecho entre los divs */\n }\n .container{\n-    margin-left: 25rem;\n+    margin-left: 24rem;\n     margin-right: 21rem;\n }\n \n .title p{\n"
+                },
+                {
+                    "date": 1695198285860,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,4 +33,10 @@\n .categories:hover {\n     background-color: #000000; /* Cambia el color de fondo al pasar el cursor */\n     color: white;\n }\n+\n+@media (max-width: 768px) {\n+    .title p {\n+        font-size: 40px;\n+    }\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1695198297254,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,7 +36,8 @@\n }\n \n @media (max-width: 768px) {\n     .title p {\n-        font-size: 40px;\n+        padding: 3rem;\n+        font-size: 50px;\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1695198322020,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,5 +39,9 @@\n     .title p {\n         padding: 3rem;\n         font-size: 50px;\n     }\n+    .container{\n+        margin-left: 2rem;\n+        margin-right: 4rem;\n+    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1695198327771,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -41,7 +41,7 @@\n         font-size: 50px;\n     }\n     .container{\n         margin-left: 2rem;\n-        margin-right: 4rem;\n+        margin-right: 1rem;\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1695198336939,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,8 +40,8 @@\n         padding: 3rem;\n         font-size: 50px;\n     }\n     .container{\n-        margin-left: 2rem;\n+        margin-left: 1rem;\n         margin-right: 1rem;\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1695198345101,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,8 +40,8 @@\n         padding: 3rem;\n         font-size: 50px;\n     }\n     .container{\n-        margin-left: 1rem;\n+        margin-left: 2rem;\n         margin-right: 1rem;\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1695198371331,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,10 +38,11 @@\n @media (max-width: 768px) {\n     .title p {\n         padding: 3rem;\n         font-size: 50px;\n+        margin-left:1 ;\n     }\n     .container{\n-        margin-left: 2rem;\n+        margin-left: 2.5rem;\n         margin-right: 1rem;\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1695198387094,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,11 +38,10 @@\n @media (max-width: 768px) {\n     .title p {\n         padding: 3rem;\n         font-size: 50px;\n-        margin-left:1 ;\n     }\n     .container{\n         margin-left: 2.5rem;\n-        margin-right: 1rem;\n+        margin-right: 0rem;\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1695198416243,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,8 +40,8 @@\n         padding: 3rem;\n         font-size: 50px;\n     }\n     .container{\n-        margin-left: 2.5rem;\n+        margin-left: 0rem;\n         margin-right: 0rem;\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1695198422353,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,8 +40,8 @@\n         padding: 3rem;\n         font-size: 50px;\n     }\n     .container{\n-        margin-left: 0rem;\n+        margin-left: .5rem;\n         margin-right: 0rem;\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1695198430134,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,8 +40,8 @@\n         padding: 3rem;\n         font-size: 50px;\n     }\n     .container{\n-        margin-left: .5rem;\n+        margin-left: 2rem;\n         margin-right: 0rem;\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1695198436060,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,8 +40,8 @@\n         padding: 3rem;\n         font-size: 50px;\n     }\n     .container{\n-        margin-left: 2rem;\n+        margin-left: 3rem;\n         margin-right: 0rem;\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1695198483288,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n     display: inline-block; /* Hace que los divs sean elementos en línea-block */\n     margin-right: 21px; /* Agrega un margen derecho entre los divs */\n }\n .container{\n-    margin-left: 24rem;\n+    margin-left: 23rem;\n     margin-right: 21rem;\n }\n \n .title p{\n@@ -40,8 +40,8 @@\n         padding: 3rem;\n         font-size: 50px;\n     }\n     .container{\n-        margin-left: 3rem;\n+        margin-left: 2rem;\n         margin-right: 0rem;\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1695198501537,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n     margin-right: 21px; /* Agrega un margen derecho entre los divs */\n }\n .container{\n     margin-left: 23rem;\n-    margin-right: 21rem;\n+    margin-right: 19rem;\n }\n \n .title p{\n     padding: 5rem;\n"
+                },
+                {
+                    "date": 1695198508154,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n     display: inline-block; /* Hace que los divs sean elementos en línea-block */\n     margin-right: 21px; /* Agrega un margen derecho entre los divs */\n }\n .container{\n-    margin-left: 23rem;\n+    margin-left: 20rem;\n     margin-right: 19rem;\n }\n \n .title p{\n"
+                },
+                {
+                    "date": 1695198513811,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n     margin-right: 21px; /* Agrega un margen derecho entre los divs */\n }\n .container{\n     margin-left: 20rem;\n-    margin-right: 19rem;\n+    margin-right: 17rem;\n }\n \n .title p{\n     padding: 5rem;\n"
+                },
+                {
+                    "date": 1695198534185,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n     display: inline-block; /* Hace que los divs sean elementos en línea-block */\n     margin-right: 21px; /* Agrega un margen derecho entre los divs */\n }\n .container{\n-    margin-left: 20rem;\n+    margin-left: 19rem;\n     margin-right: 17rem;\n }\n \n .title p{\n"
+                },
+                {
+                    "date": 1695228452810,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,8 +19,9 @@\n }\n .container{\n     margin-left: 19rem;\n     margin-right: 17rem;\n+    margin-bottom: 3rem;\n }\n \n .title p{\n     padding: 5rem;\n"
+                },
+                {
+                    "date": 1695228462656,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n }\n .container{\n     margin-left: 19rem;\n     margin-right: 17rem;\n-    margin-bottom: 3rem;\n+    margin-bottom: 4rem;\n }\n \n .title p{\n     padding: 5rem;\n"
+                }
+            ],
+            "date": 1695194601719,
+            "name": "Commit-0",
+            "content": ".categories {\n    display: inline-block;\n    padding: 10px 20px; /* Ajusta el padding según tus preferencias */\n    background-color: #007bff; /* Color de fondo del botón */\n    color: #fff; /* Color del texto del botón */\n    border: none; /* Elimina el borde del botón */\n    border-radius: 4px; /* Borde redondeado */\n    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */\n    text-align: center;\n    text-decoration: none; /* Elimina la decoración de texto (subrayado) */\n}\n\n/* Estilos para el botón al pasar el cursor */\n.categories:hover {\n    background-color: #0056b3; /* Cambia el color de fondo al pasar el cursor */\n}"
+        }
+    ]
+}

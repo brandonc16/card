@@ -1,0 +1,48 @@
+
+.categories {
+    padding: 6px 12px; /* Ajusta el padding según tus preferencias */
+    background-color: #e2e2e2; /* Color de fondo del botón */
+    color: black; /* Color del texto del botón */
+    border: none; /* Elimina el borde del botón */
+    border-radius: 20px; /* Borde redondeado */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    text-decoration: none; /* Elimina la decoración de texto (subrayado) */
+    font-weight: 600;
+    width:89%;
+    display: flex;
+    justify-content:center; /* Centrar horizontalmente */
+    font-size: small;
+}
+.categories-container {
+    display: inline-block; /* Hace que los divs sean elementos en línea-block */
+    margin-right: 21px; /* Agrega un margen derecho entre los divs */
+}
+.container{
+    margin-left: 19rem;
+    margin-right: 17rem;
+    margin-bottom: 4rem;
+}
+
+.title p{
+    padding: 5rem;
+    font-size: 50px;
+    margin: 0 auto; /* Centrado horizontal */
+    text-align: center; /* Alineación del texto en el centro */
+}
+
+/* Estilos para el botón al pasar el cursor */
+.categories:hover {
+    background-color: #000000; /* Cambia el color de fondo al pasar el cursor */
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .title p {
+        padding: 3rem;
+        font-size: 50px;
+    }
+    .container{
+        margin-left: 2rem;
+        margin-right: 0rem;
+    }
+}
